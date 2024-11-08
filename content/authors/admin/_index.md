@@ -1,9 +1,9 @@
 ---
 # Display name
-title: Sourav
+title: Saurav
 
 # Name pronunciation (optional)
-name_pronunciation: Sourav
+name_pronunciation: Saurav
 
 # Full name (for SEO)
 first_name: Saurav
@@ -20,18 +20,18 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: RA
+role: Research Assistant
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: OpenAI
+  - name: Indian Institute of Science, Bangalore, India
     url: https://openai.com/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'mailto:your-sauravdutta2145@gmail.com'
     label: E-mail Me
   - icon: brands/x
     url: https://twitter.com/GetResearchDev
