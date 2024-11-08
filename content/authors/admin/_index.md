@@ -136,4 +136,4 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Saurav Dutta is a visionary researcher in advanced materials science, with a deep-seated expertise in metamaterials, wave physics, and architected materials. Bridging theoretical rigor with experimental finesse, he has made notable strides in finite element analysis and data-driven methodologies. Saurav's work underpins cutting-edge innovations in the realm of heterogeneous material analysis and dynamic simulations, bringing clarity to complex physical phenomena. His academic journey, marked by intellectual curiosity and a commitment to pushing scientific boundaries, continues to shape new paradigms in the field of material science.
