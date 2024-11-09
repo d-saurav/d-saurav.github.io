@@ -3,7 +3,7 @@
 title: Saurav
 
 # Name pronunciation (optional)
-name_pronunciation: Saurav
+#name_pronunciation: Saurav
 
 # Full name (for SEO)
 first_name: Saurav
