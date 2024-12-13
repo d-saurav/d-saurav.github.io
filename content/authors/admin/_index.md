@@ -29,37 +29,37 @@ organizations:
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
-# profiles:
-#   - icon: at-symbol
-#     url: 'mailto:your-sauravdutta2145@gmail.com'
-#     label: E-mail Me
-# #  - icon: brands/x
-# #    url: https://twitter.com/GetResearchDev
-# #  - icon: brands/instagram
-# #    url: https://www.instagram.com/
-#   - icon: brands/github
-#     url: https://github.com/sdutta4587
-#   - icon: brands/linkedin
-#     url: https://www.linkedin.com/
-#   - icon: academicons/google-scholar
-#     url: https://scholar.google.com/
-# #  - icon: academicons/orcid
-# #    url: https://orcid.org/
+profiles:
+  - icon: at-symbol
+    url: 'mailto:your-sauravdutta2145@gmail.com'
+    label: E-mail Me
+#  - icon: brands/x
+#    url: https://twitter.com/GetResearchDev
+#  - icon: brands/instagram
+#    url: https://www.instagram.com/
+  - icon: brands/github
+    url: https://github.com/sdutta4587
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/
+#  - icon: academicons/orcid
+#    url: https://orcid.org/
 
-# interests:
-#   - Architected Materials
-#   - Wave Physics
-#   - Vibrations
-#   - Metamaterials
-#   - Soft Robotics
-#   - Data-Driven Physics
-#   - Active Materials
+interests:
+  - Architected Materials
+  - Wave Physics
+  - Vibrations
+  - Metamaterials
+  - Soft Robotics
+  - Data-Driven Physics
+  - Active Materials
 
-# education:
-#   - area: B.Tech Civil Engineering
-#     institution: National Institute of Technology (NIT), Silchar, India
-#     date_start: 2019-07-01
-#     date_end: 2023-06-01
+education:
+  - area: B.Tech Civil Engineering
+    institution: National Institute of Technology (NIT), Silchar, India
+    date_start: 2019-07-01
+    date_end: 2023-06-01
 # # Skills
 # # Add your own SVG icons to `assets/media/icons/`
 # skills:
