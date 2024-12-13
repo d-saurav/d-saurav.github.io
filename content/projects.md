@@ -2,7 +2,7 @@
 title: 'Projects'
 date: 2024-05-19
 type: landing
-draft = True
+draft: true
 design:
   # Section spacing
   spacing: '5rem'
