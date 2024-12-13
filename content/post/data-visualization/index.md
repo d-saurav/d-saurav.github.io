@@ -1,8 +1,8 @@
 ---
 title: 📈 Communicate your results effectively with the best data visualizations
 summary: Use popular tools such as Plotly, Mermaid, and data frames.
-date: 2023-10-25
-draft = True
+date: 2026-10-25
+# draft: true
 authors:
   - admin
 tags:
