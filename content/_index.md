@@ -32,14 +32,25 @@ sections:
           parallax: false
   - block: markdown
     content:
-      title: '📚 My Research'
+      title: '📚 Research Overview'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        My research journey has been a mosaic of interconnected explorations, each phase building on the other, revealing the fascinating tapestry of mechanics and materials. It began with the tremors of the earth and has evolved into designing materials that shape the future of engineering.
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
-        
-        Please reach out to collaborate 😃
+        ### **Listening to the Earth: Ground Motion and Seismic Dynamics**  
+        It started with a simple yet profound question: How can we better understand the forces that shake our world? My early work focused on the dynamics of ground motion, where I dived into seismic data, unraveling patterns hidden within the chaos of earthquakes. Using tools like MATLAB and datasets from the PEER database, I calculated response spectra, peak ground accelerations, and Fourier spectra, turning raw data into meaningful insights. These studies were not just about numbers; they were about safeguarding lives, creating structures that could withstand nature’s fury, and finding harmony within disorder.
+
+        ### **Mechanical Systems: Precision in Motion**
+        As my curiosity grew, I looked upward—toward engineered systems where precision and control reign supreme. I explored the dynamics of time-periodic stiffness in a single-degree-of-freedom system, designing experiments that brought theory to life. With pendulums crafted to perfection and motors synchronized to the microsecond, I delved into the subtle dance between motion and mechanics. Techniques like Laser Doppler Vibrometry and Digital Image Correlation became my tools, helping me track the oscillations of these systems with pinpoint accuracy. Each experiment felt like tuning a symphony, seeking the perfect resonance in a sea of possibilities.
+
+        ### **Metamaterials: The Art of Shaping Waves**
+        This fascination with dynamics and control naturally led me to metamaterials—engineered marvels that manipulate waves in ways once thought impossible. Here, the challenge was to create materials that defied conventional boundaries. By designing topological metamaterials, I entered a realm where structure dictates function, where geometry holds the key to phenomena like wave propagation and energy localization. It was in this phase that I began exploring the concept of inverse design, using physics and computation not only to understand but to create.
+
+        ### **The Inverse Design of Heterogeneous Materials: Complexity Meets Creativity**
+        Today, my journey has brought me to the cutting edge of material science: the inverse design of heterogeneous materials. Working with Prof. Akshay Joshi at IISc, I am leveraging data-driven techniques to uncover the hidden potential of materials with spatially varying properties. By clustering material behaviors, calculating deformation gradients, and harnessing computational frameworks, I aim to craft materials that respond to the most demanding applications. This phase feels like a culmination of everything before it—a blending of the precision from mechanical systems, the innovation from metamaterials, and the complexity from seismic dynamics.
+
+        ### **A Vision of Interconnected Ideas**
+        As I reflect on this journey, I see a story of connections—how the tremors of the earth inspired a fascination with motion, how motion led to the discovery of materials that defy convention, and how all of it converged into designing the impossible. My research is not just about solving problems; it’s about weaving together threads of curiosity and innovation to create something meaningful, something lasting.
     design:
       columns: '1'
   - block: collection
