@@ -37,10 +37,10 @@ profiles:
 #    url: https://twitter.com/GetResearchDev
 #  - icon: brands/instagram
 #    url: https://www.instagram.com/
-  - icon: brands/github
-    url: https://github.com/sdutta4587
+  # - icon: brands/github
+  #   url: https://github.com/sdutta4587
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
+    url: https://www.linkedin.com/in/saurav-dutta-7aa931195/
   - icon: academicons/google-scholar
     url: https://scholar.google.com/
 #  - icon: academicons/orcid
