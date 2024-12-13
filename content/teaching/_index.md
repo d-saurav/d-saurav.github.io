@@ -1,8 +1,8 @@
----
+<!-- ---
 title: Relevant Courses
 summary: My courses
 type: landing
-# draft: True
+
 cascade:
   - _target:
       kind: page
@@ -20,4 +20,4 @@ sections:
     design:
       view: article-grid
       columns: 2
----
+--- -->
