@@ -41,8 +41,8 @@ profiles:
   #   url: https://github.com/sdutta4587
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/saurav-dutta-7aa931195/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/
+  #- icon: academicons/google-scholar
+  #  url: https://scholar.google.com/
 #  - icon: academicons/orcid
 #    url: https://orcid.org/
 
