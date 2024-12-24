@@ -111,4 +111,10 @@ education:
 
 ## About Me
 
-Saurav Dutta is a visionary researcher in advanced materials science, with a deep-seated expertise in metamaterials, wave physics, and architected materials. Bridging theoretical rigor with experimental finesse, he has made notable strides in finite element analysis and data-driven methodologies. Saurav's work underpins cutting-edge innovations in the realm of heterogeneous material analysis and dynamic simulations, bringing clarity to complex physical phenomena. His academic journey, marked by intellectual curiosity and a commitment to pushing scientific boundaries, continues to shape new paradigms in the field of material science.
+Hello, and welcome to my webpage!
+
+I am a researcher passionate about exploring the fascinating world of advanced materials. My work is focused on metamaterials, wave physics, and architected materials—fields that hold immense potential to revolutionize the way we understand and design materials.
+
+Bridging theoretical insights with experimental precision, I specialize in finite element analysis and data-driven approaches to uncover the intricate dynamics of heterogeneous materials and architected materials. Through my research, I aim to bring clarity to complex physical phenomena and contribute to innovations that redefine advanced material.
+
+Thank you for visiting, and feel free to explore more about my journey!
