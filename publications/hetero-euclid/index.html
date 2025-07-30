@@ -2,7 +2,7 @@
 <html lang="en">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <title>
-      Realtime Rendering on a Single Thread | Saurav Dutta
+      Hetero-EUCLID: Interpretable model discovery for heterogeneous hyperelastic materials using stress-free unsupervised learning | Saurav Dutta
   </title>
 
   <meta charset='utf-8'>
@@ -24,11 +24,11 @@
 <meta name="keywords" content="Saurav Dutta">
 <meta property="og:locale" content='en)_US'>
 <meta property="og:type" content="article">
-<meta property="og:title" content="Realtime Rendering on a Single Thread">
-<meta property="og:description" content="Real-time rendering on a single CPU thread is no longer a daydream!">
-<meta property="og:url" content="http://localhost:1313/publications/realtime-rendering-on-a-single-thread/">
+<meta property="og:title" content="Hetero-EUCLID: Interpretable model discovery for heterogeneous hyperelastic materials using stress-free unsupervised learning">
+<meta property="og:description" content="An unsupervised, interpretable framework to identify heterogeneous hyperelastic models without using stress data.">
+<meta property="og:url" content="http://localhost:1313/publications/hetero-euclid/">
 <meta property="og:image" content="images/%!s(&lt;nil&gt;)">
-<link rel="canonical" href="http://localhost:1313/publications/realtime-rendering-on-a-single-thread/"><link rel="apple-touch-icon" sizes="180x180" href='images/icons/apple-touch-icon.png'>
+<link rel="canonical" href="http://localhost:1313/publications/hetero-euclid/"><link rel="apple-touch-icon" sizes="180x180" href='images/icons/apple-touch-icon.png'>
 <link rel="icon" type="image/png" sizes="32x32" href='images/icons/favicon-32x32.png'>
 <link rel="icon" type="image/png" sizes='16x16' href='images/icons/favicon-16x16.png'>
 <link rel="manifest" href='http://localhost:1313/images/icons/site.webmanifest'>
@@ -114,10 +114,10 @@ figcaption::before {
 
 
 
-<h1>Realtime Rendering on a Single Thread</h1>
+<h1>Hetero-EUCLID: Interpretable model discovery for heterogeneous hyperelastic materials using stress-free unsupervised learning</h1>
 
 
-<h5 style="margin-top: 0;"><a href=to-publisher-website></a>International Journal of Graphics 2021</a></h5>
+<h5 style="margin-top: 0;"><a href=https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering></a>Computer Methods in Applied Mechanics and Engineering</a></h5>
 
 
 <div class="authors header-font">
@@ -132,19 +132,14 @@ figcaption::before {
 
 		<div class="author-info">
 
-			<a class="author-name" href=" https://desmondlzy.me " >Bar Foo</a>
+			<a class="author-name" href=" https://desmondlzy.me " >Kanhaiya lal Chaurasiya*</a>
 
 			<div class="author-affliation">
 			
 				
 				
 
-				<a class="author-affiliation-name" href="https://foo.edu">University of Foo</a><span style="font-size: 90%;"> and </span>
-			
-				
-				
-
-				<a class="author-affiliation-name" href="https://bar.org">Institute of Bar</a>
+				<a class="author-affiliation-name" href="https://iisc.ac.in/">Indian Institute of Science, Bengaluru</a>
 			
 			</div>
 
@@ -160,35 +155,82 @@ figcaption::before {
 
 		<div class="author-info">
 
-			<a class="author-name" href=" https://desmondlzy.me " >Who am I</a>
+			<a class="author-name" href=" https://d-saurav.github.io " >Saurav Dutta*</a>
 
 			<div class="author-affliation">
 			
 				
 				
 
-				<a class="author-affiliation-name" href="https://foo.edu">University of Foo</a><span style="font-size: 90%;"> and </span>
+				<a class="author-affiliation-name" href="https://iisc.ac.in/">Indian Institute of Science, Bengaluru</a>
+			
+			</div>
+
+		</div>
+	
+		
+		
+		
+		
+		
+		
+		
+
+		<div class="author-info">
+
+			<a class="author-name" href=" https://www.mech-mat.com/ " >Siddanth Kumar</a>
+
+			<div class="author-affliation">
 			
 				
 				
 
-				<a class="author-affiliation-name" href="https://bar.org">Institute of Bar</a>
+				<a class="author-affiliation-name" href="https://www.tudelft.nl/en/">Delft University of Technology, 2628 CD Delft, The Netherlands</a>
+			
+			</div>
+
+		</div>
+	
+		
+		
+		
+		
+		
+		
+		
+
+		<div class="author-info">
+
+			<a class="author-name" href=" https://d3lab-iisc.github.io/ " >Akshay Joshi^</a>
+
+			<div class="author-affliation">
+			
+				
+				
+
+				<a class="author-affiliation-name" href="https://iisc.ac.in/">Indian Institute of Science, Bengaluru</a>
 			
 			</div>
 
 		</div>
 	
 	<div class="author-notes pale">
+	<span>*co-first author</span>
+	<span>^corresponding author</span>
 	
 	</div>
 </div>
 
 
-<p style="margin-top: 1em;"><em>Real-time rendering on a single CPU thread is no longer a daydream!</em></p>
+<p style="margin-top: 1em;"><em>An unsupervised, interpretable framework to identify heterogeneous hyperelastic models without using stress data.</em></p>
 
 </p>
-<h2 id="intro">Intro.</h2>
-<p>In this work, we present a novel approach&hellip;</p>
+<h2 id="your-content-here">Your content here.</h2>
+<p>In this work, we developed Hetero-EUCLID, an interpretable model discovery framework designed to identify material behavior in heterogeneous hyperelastic structures, without using stress data. Instead, it works solely with full-field displacement and boundary force data, mimicking real-world Digital Image Correlation (DIC) experiments.</p>
+<p>The method works in two stages:
+First, it locates material interfaces by analyzing where the internal force balance breaks down, using a clever combination of residual analysis and a random-seed-based clustering algorithm. This lets us segment the domain into regions of different material properties.
+Next, we solve for region-specific material models using a sparse, probabilistic approach that stitches everything together into a globally consistent heterogeneous model.</p>
+<p>We tested Hetero-EUCLID across a variety of material layouts, mesh types, and noise levels—proving that it’s not just accurate, but also robust and experiment-friendly.</p>
 
         </div>
       </div>

@@ -2,40 +2,55 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Saurav Dutta</title>
-    <link>https://d-saurav.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Saurav Dutta</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>sauravdutta2145@gmail.com (Saurav Dutta)</managingEditor>
     <webMaster>sauravdutta2145@gmail.com (Saurav Dutta)</webMaster>
-    <atom:link href="https://d-saurav.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Jul 2025 14:59:39 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Blog</title>
-      <link>https://d-saurav.github.io/blog/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>sauravdutta2145@gmail.com (Saurav Dutta)</author>
-      <guid>https://d-saurav.github.io/blog/</guid>
-      <description>&lt;p&gt;Welcome to my blog page! ✨&lt;/p&gt;&#xA;&lt;p&gt;This space is where I explore all things outside of my research, from diving into large language models 🧠, to sharing lessons from side projects, to chronicling the journey of writing my first book 📚.&lt;br&gt;&#xA;It’s a playground for curiosity, experiments, and the occasional ramble. Hope you find something fun or useful here!&lt;/p&gt;</description>
+      <title>Wave propagation in an elastic lattice with non-reciprocal stiffness and viscous damping</title>
+      <link>http://localhost:1313/publications/wave-propagation/</link>
+      <pubDate>Wed, 30 Jul 2025 14:59:39 +0530</pubDate><author>sauravdutta2145@gmail.com (Saurav Dutta)</author>
+      <guid>http://localhost:1313/publications/wave-propagation/</guid>
+      <description>Assymteric damper makes the group velocity tunable</description>
+    </item>
+    <item>
+      <title>Hetero-EUCLID: Interpretable model discovery for heterogeneous hyperelastic materials using stress-free unsupervised learning</title>
+      <link>http://localhost:1313/publications/hetero-euclid/</link>
+      <pubDate>Wed, 30 Jul 2025 14:58:18 +0530</pubDate><author>sauravdutta2145@gmail.com (Saurav Dutta)</author>
+      <guid>http://localhost:1313/publications/hetero-euclid/</guid>
+      <description>An unsupervised, interpretable framework to identify heterogeneous hyperelastic models without using stress data.</description>
+    </item>
+    <item>
+      <title>Beyond Science: Writing My First Book ✍️</title>
+      <link>http://localhost:1313/blog/beyond-science/</link>
+      <pubDate>Wed, 30 Jul 2025 00:00:00 +0000</pubDate><author>sauravdutta2145@gmail.com (Saurav Dutta)</author>
+      <guid>http://localhost:1313/blog/beyond-science/</guid>
+      <description>&lt;p&gt;Not every passion fits neatly into equations or simulations.&#xA;I believe a person can&amp;rsquo;t be fully defined by their profession, and while science and research are core to who I am, I don’t want to be known only as a scientist.&lt;/p&gt;&#xA;&lt;p&gt;What brings me a different kind of fulfillment is the artistic, reflective side, the part that enjoys storytelling, introspection, and creative expression. It’s not about completing myself with work, but about understanding myself through multiple lenses.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Identification of critical ground motion features for seismic fragility studies considering soil-structure interaction</title>
+      <link>http://localhost:1313/publications/identification-of-critical-ground-motion/</link>
+      <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate><author>sauravdutta2145@gmail.com (Saurav Dutta)</author>
+      <guid>http://localhost:1313/publications/identification-of-critical-ground-motion/</guid>
+      <description>A wonderful paper.</description>
+    </item>
+    <item>
+      <title>Framework for Ground Motion Characterization</title>
+      <link>http://localhost:1313/publications/framework-for-ground-motions/</link>
+      <pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate><author>sauravdutta2145@gmail.com (Saurav Dutta)</author>
+      <guid>http://localhost:1313/publications/framework-for-ground-motions/</guid>
+      <description>A wonderful paper.</description>
     </item>
     <item>
       <title>CV</title>
-      <link>https://d-saurav.github.io/cv/</link>
+      <link>http://localhost:1313/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>sauravdutta2145@gmail.com (Saurav Dutta)</author>
-      <guid>https://d-saurav.github.io/cv/</guid>
+      <guid>http://localhost:1313/cv/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;./files/CV.pdf&#34;&gt;Click here for my full academic CV&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;./files/Resume.pdf&#34;&gt;Click here for my 1 page CV (non-academic, coding focused)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>Realtime Rendering on a Single Thread</title>
-      <link>https://d-saurav.github.io/publications/realtime-rendering-on-a-single-thread/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>sauravdutta2145@gmail.com (Saurav Dutta)</author>
-      <guid>https://d-saurav.github.io/publications/realtime-rendering-on-a-single-thread/</guid>
-      <description>Real-time rendering on a single CPU thread is no longer a daydream!</description>
-    </item>
-    <item>
-      <title>Towards Lossless Conversion From Soup to Voxels</title>
-      <link>https://d-saurav.github.io/publications/lossless-conversion-from-soup-to-voxels/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>sauravdutta2145@gmail.com (Saurav Dutta)</author>
-      <guid>https://d-saurav.github.io/publications/lossless-conversion-from-soup-to-voxels/</guid>
-      <description>Yet another significant step from soup to voxels!</description>
     </item>
   </channel>
 </rss>
