@@ -1,21 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Blog on Saurav Dutta</title>
-    <link>http://localhost:1313/blog/</link>
-    <description>Recent content in Blog on Saurav Dutta</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <managingEditor>sauravdutta2145@gmail.com (Saurav Dutta)</managingEditor>
-    <webMaster>sauravdutta2145@gmail.com (Saurav Dutta)</webMaster>
-    <lastBuildDate>Wed, 30 Jul 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Beyond Science: Writing My First Book ✍️</title>
-      <link>http://localhost:1313/blog/beyond-science/</link>
-      <pubDate>Wed, 30 Jul 2025 00:00:00 +0000</pubDate><author>sauravdutta2145@gmail.com (Saurav Dutta)</author>
-      <guid>http://localhost:1313/blog/beyond-science/</guid>
-      <description>&lt;p&gt;Not every passion fits neatly into equations or simulations.&#xA;I believe a person can&amp;rsquo;t be fully defined by their profession, and while science and research are core to who I am, I don’t want to be known only as a scientist.&lt;/p&gt;&#xA;&lt;p&gt;What brings me a different kind of fulfillment is the artistic, reflective side, the part that enjoys storytelling, introspection, and creative expression. It’s not about completing myself with work, but about understanding myself through multiple lenses.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on Saurav Dutta</title><link>https://d-saurav.github.io/blog/</link><description>Recent content in Blog on Saurav Dutta</description><generator>Hugo</generator><language>en-us</language><managingEditor>sauravdutta2145@gmail.com (Saurav Dutta)</managingEditor><webMaster>sauravdutta2145@gmail.com (Saurav Dutta)</webMaster><lastBuildDate>Wed, 30 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://d-saurav.github.io/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Beyond Science: Writing My First Book ✍️</title><link>https://d-saurav.github.io/blog/beyond-science/</link><pubDate>Wed, 30 Jul 2025 00:00:00 +0000</pubDate><author>sauravdutta2145@gmail.com (Saurav Dutta)</author><guid>https://d-saurav.github.io/blog/beyond-science/</guid><description>&lt;p>Not every passion fits neatly into equations or simulations.
+I believe a person can&amp;rsquo;t be fully defined by their profession, and while science and research are core to who I am, I don’t want to be known only as a scientist.&lt;/p>
+&lt;p>What brings me a different kind of fulfillment is the artistic, reflective side, the part that enjoys storytelling, introspection, and creative expression. It’s not about completing myself with work, but about understanding myself through multiple lenses.&lt;/p></description></item></channel></rss>
