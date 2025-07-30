@@ -1,1 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lossless Conversion from Soup to Voxels on Saurav Dutta</title><link>https://d-saurav.github.io/publications/</link><description>Recent content in Lossless Conversion from Soup to Voxels on Saurav Dutta</description><generator>Hugo</generator><language>en-us</language><managingEditor>sauravdutta2145@gmail.com (Saurav Dutta)</managingEditor><webMaster>sauravdutta2145@gmail.com (Saurav Dutta)</webMaster><lastBuildDate>Wed, 30 Jul 2025 14:59:39 +0530</lastBuildDate><atom:link href="https://d-saurav.github.io/publications/index.xml" rel="self" type="application/rss+xml"/><item><title>Wave propagation in an elastic lattice with non-reciprocal stiffness and viscous damping</title><link>https://d-saurav.github.io/publications/wave-propagation/</link><pubDate>Wed, 30 Jul 2025 14:59:39 +0530</pubDate><author>sauravdutta2145@gmail.com (Saurav Dutta)</author><guid>https://d-saurav.github.io/publications/wave-propagation/</guid><description>Assymteric damper makes the group velocity tunable</description></item><item><title>Hetero-EUCLID: Interpretable model discovery for heterogeneous hyperelastic materials using stress-free unsupervised learning</title><link>https://d-saurav.github.io/publications/hetero-euclid/</link><pubDate>Wed, 30 Jul 2025 14:58:18 +0530</pubDate><author>sauravdutta2145@gmail.com (Saurav Dutta)</author><guid>https://d-saurav.github.io/publications/hetero-euclid/</guid><description>An unsupervised, interpretable framework to identify heterogeneous hyperelastic models without using stress data.</description></item><item><title>Identification of critical ground motion features for seismic fragility studies considering soil-structure interaction</title><link>https://d-saurav.github.io/publications/identification-of-critical-ground-motion/</link><pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate><author>sauravdutta2145@gmail.com (Saurav Dutta)</author><guid>https://d-saurav.github.io/publications/identification-of-critical-ground-motion/</guid><description>A wonderful paper.</description></item><item><title>Framework for Ground Motion Characterization</title><link>https://d-saurav.github.io/publications/framework-for-ground-motions/</link><pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate><author>sauravdutta2145@gmail.com (Saurav Dutta)</author><guid>https://d-saurav.github.io/publications/framework-for-ground-motions/</guid><description>A wonderful paper.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lossless Conversion from Soup to Voxels on Saurav Dutta</title>
+    <link>https://d-saurav.github.io/publications/</link>
+    <description>Recent content in Lossless Conversion from Soup to Voxels on Saurav Dutta</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>sauravdutta2145@gmail.com (Saurav Dutta)</managingEditor>
+    <webMaster>sauravdutta2145@gmail.com (Saurav Dutta)</webMaster>
+    <lastBuildDate>Wed, 30 Jul 2025 14:59:39 +0530</lastBuildDate>
+    <atom:link href="https://d-saurav.github.io/publications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wave propagation in an elastic lattice with non-reciprocal stiffness and viscous damping</title>
+      <link>https://d-saurav.github.io/publications/wave-propagation/</link>
+      <pubDate>Wed, 30 Jul 2025 14:59:39 +0530</pubDate><author>sauravdutta2145@gmail.com (Saurav Dutta)</author>
+      <guid>https://d-saurav.github.io/publications/wave-propagation/</guid>
+      <description>Assymteric damper makes the group velocity tunable</description>
+    </item>
+    <item>
+      <title>Hetero-EUCLID: Interpretable model discovery for heterogeneous hyperelastic materials using stress-free unsupervised learning</title>
+      <link>https://d-saurav.github.io/publications/hetero-euclid/</link>
+      <pubDate>Wed, 30 Jul 2025 14:58:18 +0530</pubDate><author>sauravdutta2145@gmail.com (Saurav Dutta)</author>
+      <guid>https://d-saurav.github.io/publications/hetero-euclid/</guid>
+      <description>An unsupervised, interpretable framework to identify heterogeneous hyperelastic models without using stress data.</description>
+    </item>
+    <item>
+      <title>Identification of critical ground motion features for seismic fragility studies considering soil-structure interaction</title>
+      <link>https://d-saurav.github.io/publications/identification-of-critical-ground-motion/</link>
+      <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate><author>sauravdutta2145@gmail.com (Saurav Dutta)</author>
+      <guid>https://d-saurav.github.io/publications/identification-of-critical-ground-motion/</guid>
+      <description>A wonderful paper.</description>
+    </item>
+    <item>
+      <title>Framework for Ground Motion Characterization</title>
+      <link>https://d-saurav.github.io/publications/framework-for-ground-motions/</link>
+      <pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate><author>sauravdutta2145@gmail.com (Saurav Dutta)</author>
+      <guid>https://d-saurav.github.io/publications/framework-for-ground-motions/</guid>
+      <description>A wonderful paper.</description>
+    </item>
+  </channel>
+</rss>
