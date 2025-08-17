@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Lossless Conversion from Soup to Voxels on Saurav Dutta</title>
+    <title>Saurav Dutta</title>
     <link>https://d-saurav.github.io/publications/</link>
-    <description>Recent content in Lossless Conversion from Soup to Voxels on Saurav Dutta</description>
+    <description>Recent content on Saurav Dutta</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 31 Jul 2025 00:00:00 +0000</lastBuildDate>
@@ -14,6 +14,13 @@
       <pubDate>Thu, 31 Jul 2025 00:00:00 +0000</pubDate>
       <guid>https://d-saurav.github.io/publications/wave-propagation/</guid>
       <description>🔁 Non-reciprocity tunes the wave&amp;rsquo;s group velocity, frequency and amplification rate</description>
+    </item>
+    <item>
+      <title>Ientification of critical ground motion features for seismic fragility studies considering soil-structure interaction</title>
+      <link>https://d-saurav.github.io/publications/soil-structure-interaction/</link>
+      <pubDate>Wed, 30 Jul 2025 15:00:00 +0530</pubDate>
+      <guid>https://d-saurav.github.io/publications/soil-structure-interaction/</guid>
+      <description>A wonderful paper.</description>
     </item>
     <item>
       <title>Hetero-EUCLID: Interpretable model discovery for heterogeneous hyperelastic materials using stress-free unsupervised learning</title>
