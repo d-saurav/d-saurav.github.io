@@ -6,8 +6,15 @@
     <description>Recent content on Saurav Dutta</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 31 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://d-saurav.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Beyond Science: Drafting My First Book ✍️</title>
+      <link>https://d-saurav.github.io/blog/beyond-science/</link>
+      <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://d-saurav.github.io/blog/beyond-science/</guid>
+      <description>&lt;p&gt;Not every passion fits neatly into equations or simulations.&#xA;I believe a person can&amp;rsquo;t be fully defined by their profession, and while engineering and research are core to who I am, I don’t want to be known only as a scientist.&lt;/p&gt;&#xA;&lt;p&gt;What brings me a different kind of fulfillment is the artistic, reflective side — the part that enjoys storytelling, introspection, and creative expression. It’s not about completing myself with work, but about understanding myself through multiple lenses.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Wave propagation in an elastic lattice with non-reciprocal stiffness and engineered damping</title>
       <link>https://d-saurav.github.io/publications/wave-propagation/</link>
@@ -21,13 +28,6 @@
       <pubDate>Wed, 30 Jul 2025 14:58:18 +0530</pubDate>
       <guid>https://d-saurav.github.io/publications/hetero-euclid/</guid>
       <description>🧠 Unsupervised model discovery without stress input — interpretable and automatic.</description>
-    </item>
-    <item>
-      <title>Beyond Science: Writing My First Book ✍️</title>
-      <link>https://d-saurav.github.io/blog/beyond-science/</link>
-      <pubDate>Wed, 30 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://d-saurav.github.io/blog/beyond-science/</guid>
-      <description>&lt;p&gt;Not every passion fits neatly into equations or simulations.&#xA;I believe a person can&amp;rsquo;t be fully defined by their profession, and while science and research are core to who I am, I don’t want to be known only as a scientist.&lt;/p&gt;&#xA;&lt;p&gt;What brings me a different kind of fulfillment is the artistic, reflective side, the part that enjoys storytelling, introspection, and creative expression. It’s not about completing myself with work, but about understanding myself through multiple lenses.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Identification of critical ground motion features for seismic fragility studies considering soil-structure interaction</title>
