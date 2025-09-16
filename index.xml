@@ -6,8 +6,15 @@
     <description>Recent content on Saurav Dutta</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://d-saurav.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hetero-EUCLID: Interpretable model discovery for heterogeneous hyperelastic materials using stress-free unsupervised learning</title>
+      <link>https://d-saurav.github.io/publications/hetero-euclid/</link>
+      <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://d-saurav.github.io/publications/hetero-euclid/</guid>
+      <description>🧠 Unsupervised model discovery without stress input — interpretable and automatic.</description>
+    </item>
     <item>
       <title>Beyond Science: Drafting My First Book ✍️</title>
       <link>https://d-saurav.github.io/blog/beyond-science/</link>
@@ -21,13 +28,6 @@
       <pubDate>Thu, 31 Jul 2025 00:00:00 +0000</pubDate>
       <guid>https://d-saurav.github.io/publications/wave-propagation/</guid>
       <description>🔁 Non-reciprocity tunes the wave&amp;rsquo;s group velocity, frequency and amplification rate</description>
-    </item>
-    <item>
-      <title>Hetero-EUCLID: Interpretable model discovery for heterogeneous hyperelastic materials using stress-free unsupervised learning</title>
-      <link>https://d-saurav.github.io/publications/hetero-euclid/</link>
-      <pubDate>Wed, 30 Jul 2025 14:58:18 +0530</pubDate>
-      <guid>https://d-saurav.github.io/publications/hetero-euclid/</guid>
-      <description>🧠 Unsupervised model discovery without stress input — interpretable and automatic.</description>
     </item>
     <item>
       <title>Identification of critical ground motion features for seismic fragility studies considering soil-structure interaction</title>
