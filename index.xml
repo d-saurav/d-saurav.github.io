@@ -16,13 +16,6 @@
       <description>🧠 Unsupervised model discovery without stress input — interpretable and automatic.</description>
     </item>
     <item>
-      <title>Beyond Science: Drafting My First Book ✍️</title>
-      <link>https://d-saurav.github.io/blog/beyond-science/</link>
-      <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://d-saurav.github.io/blog/beyond-science/</guid>
-      <description>&lt;p&gt;Not every passion fits neatly into equations or simulations.&#xA;I believe a person can&amp;rsquo;t be fully defined by their profession, and while engineering and research are core to who I am, I don’t want to be known only as a scientist.&lt;/p&gt;&#xA;&lt;p&gt;What brings me a different kind of fulfillment is the artistic, reflective side — the part that enjoys storytelling, introspection, and creative expression. It’s not about completing myself with work, but about understanding myself through multiple lenses.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Wave propagation in an elastic lattice with non-reciprocal stiffness and engineered damping</title>
       <link>https://d-saurav.github.io/publications/wave-propagation/</link>
       <pubDate>Thu, 31 Jul 2025 00:00:00 +0000</pubDate>
@@ -44,11 +37,32 @@
       <description>&lt;p&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA; &#xD;&#xA;&#xD;&#xA;&lt;style&gt;&#xD;&#xA;figcaption::before {&#xD;&#xA;  content: &#34;Fig. &#34; counter(figcounter) &#34;.\00a0&#34;;&#xD;&#xA;  counter-increment: figcounter;&#xD;&#xA;}&#xD;&#xA;&lt;/style&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;h1&gt;Framework for Ground Motion Characterization&lt;/h1&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;h5 style=&#34;margin-top: 0;&#34;&gt;&lt;a href=ZgotmplZ&gt;&lt;/a&gt;In Seismic Hazard Analyses, Wave Propagation and Site Characterization, Springer Nature Singapore, pp. 355–366&lt;/a&gt;&lt;/h5&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;authors header-font&#34;&gt;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&lt;div class=&#34;author-info&#34;&gt;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;a class=&#34;author-name&#34; href=&#34; https://d-saurav.github.io &#34; &gt;Saurav Dutta*&lt;/a&gt;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;div class=&#34;author-affliation&#34;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;a class=&#34;author-affiliation-name&#34; href=&#34;https://iitbhu.ac.in/&#34;&gt;Indian Institute of Technology BHU, Varanasi&lt;/a&gt;&lt;span style=&#34;font-size: 90%;&#34;&gt; and &lt;/span&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;a class=&#34;author-affiliation-name&#34; href=&#34;https://nits.ac.in/&#34;&gt;National Institute of Technology, Silchar, India&lt;/a&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&lt;/div&gt;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&lt;div class=&#34;author-info&#34;&gt;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;a class=&#34;author-name&#34; href=&#34; https://iitbhu.ac.in/dept/civ/people/anandciv &#34; &gt;Vishwajit Anand^&lt;/a&gt;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;div class=&#34;author-affliation&#34;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;a class=&#34;author-affiliation-name&#34; href=&#34;https://iitbhu.ac.in/&#34;&gt;Indian Institute of Technology BHU, Varanasi&lt;/a&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&lt;/div&gt;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;&lt;div class=&#34;author-notes pale&#34;&gt;&#xD;&#xA;&#x9;&lt;span&gt;*sole first author&lt;/span&gt;&#xD;&#xA;&#x9;&lt;span&gt;^corresponding author&lt;/span&gt;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;&lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
+      <title></title>
+      <link>https://d-saurav.github.io/experiences/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://d-saurav.github.io/experiences/</guid>
+      <description>&lt;p&gt;Prior to joining &lt;a href=&#34;https://home.vizuara.ai/&#34;&gt;Vizuara AI Labs&lt;/a&gt; and collaborating with &lt;a href=&#34;https://www.epfl.ch/labs/lmd/&#34;&gt;Prof. Kostas&lt;/a&gt; from &lt;a href=&#34;https://www.epfl.ch/en/&#34;&gt;EPFL&lt;/a&gt;, I worked for over two years as a Research Associate at the &lt;a href=&#34;https://iisc.ac.in/&#34;&gt;Indian Institute of Science (IISc), Bangalore&lt;/a&gt;, focusing on the intersection of wave physics, materials, machine learning and scientific computing.&lt;/p&gt;&#xA;&lt;p&gt;At IISc, I began in &lt;a href=&#34;https://rajeshchaunsali.github.io/&#34;&gt;Prof. Rajesh Chaunsali’s group&lt;/a&gt;, investigating wave control in non-reciprocal spring-damper lattices. I developed MATLAB algorithms to study dynamic behavior in non-reciprocal systems and simultaneously worked on building an active experimental setup using motors. I implemented low-level motor synchronization in Python and Arduino (parallely on C++), enabling real-time modulation of pendulums with programmable springs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Beyond Science: Drafting My First Book ✍️</title>
+      <link>https://d-saurav.github.io/blog/beyond-science/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://d-saurav.github.io/blog/beyond-science/</guid>
+      <description>&lt;p&gt;Not every passion fits neatly into equations or simulations.&#xA;I believe a person can&amp;rsquo;t be fully defined by their profession, and while engineering and research are core to who I am, I don’t want to be known only as a scientist.&lt;/p&gt;&#xA;&lt;p&gt;What brings me a different kind of fulfillment is the artistic, reflective side — the part that enjoys storytelling, introspection, and creative expression. It’s not about completing myself with work, but about understanding myself through multiple lenses.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>CV</title>
       <link>https://d-saurav.github.io/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://d-saurav.github.io/cv/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://d-saurav.github.io/files/CV.pdf&#34;&gt;Click here for my full academic CV&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://d-saurav.github.io/files/Resume.pdf&#34;&gt;Click here for my 1 page CV (non-academic, coding focused)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Hobbies 🎨</title>
+      <link>https://d-saurav.github.io/blog/hobbies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://d-saurav.github.io/blog/hobbies/</guid>
+      <description>&lt;p&gt;When I&amp;rsquo;m not untangling research chaos, I unwind by philosophizing about the cosmos and the planets with aero-astro friends or my space enthusiast guys and waging dramatic battles on the chessboard, where I’m proudly in my ‘intermediate but plotting world domination’ era.&lt;/p&gt;&#xA;&lt;p&gt;I also like playing guitar and love listening to melancholic music, Whenever I spot a guitar in the room, I instinctively pick it up to check if my muscle memory has survived its 3–4 year sabbatical. Some days I surprise myself, other days the strings remind me why I switched to science.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
