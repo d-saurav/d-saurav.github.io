@@ -116,35 +116,39 @@
     <div>
       <div class="home_inner count-figure count-h2h3">
         <style>
+/* --- Icon Styling --- */
 .social-links-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 20px; /* Space between icons */
   margin-top: 15px;
 }
+
 .social-icon-link {
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: #555;
+  color: #555; /* Default Dark Grey */
   transition: all 0.3s ease;
 }
-.social-icon-link svg {
-  width: 24px;
-  height: 24px;
-  fill: currentColor;
-}
-.social-icon-link:hover { transform: translateY(-3px); }
-.social-icon-link.email:hover { color: #d93025; }
-.social-icon-link.scholar:hover { color: #4285F4; }
-.social-icon-link.linkedin:hover { color: #0077b5; }
 
-/* Existing header styling */
+.social-icon-link svg {
+  width: 24px;  /* Icon Size */
+  height: 24px;
+  fill: currentColor; /* Inherits color from the link */
+}
+
+/* Hover Effects */
+.social-icon-link:hover { transform: translateY(-3px); }
+.social-icon-link.email:hover { color: #d93025; }    /* Gmail Red */
+.social-icon-link.scholar:hover { color: #4285F4; }  /* Google Blue */
+.social-icon-link.linkedin:hover { color: #0077b5; } /* LinkedIn Blue */
+
+/* --- General Page Styling --- */
 h2::before { content: none !important; counter-increment: none !important; }
 h2 { margin-top: 1rem !important; }
 
-/* News section styling */
 .news-section {
   margin-top: 2rem;
   padding: 1rem 1.2rem;
@@ -184,8 +188,8 @@ h2 { margin-top: 1rem !important; }
   &lt;/a&gt;
 
 &lt;/div&gt;
+&lt;/div&gt;
 </code></pre>
-  </div>
   <div style="flex: 2; min-width: 300px;">
     <p style="margin-top: 0;">
       Hello, and welcome to my webpage!
@@ -205,9 +209,9 @@ h2 { margin-top: 1rem !important; }
   <p><em>News:</em></p>
   <ul>
     <li>Excited to announce that I have joined Vizuara AI Labs as a <em>Research Scientist</em>!</li>
-    <li>🎉 My work on <em>Machine Learning based Materials</em> from IISc is out <a href="https://arxiv.org/abs/2509.11784">here</a></li>
+    <li>🎉 My work on <em>Machine Learning-driven Materials</em> from IISc is out <a href="https://arxiv.org/abs/2509.11784">here</a></li>
     <li>🎉 My work on <em>Non-reciprocal Metamaterials</em> from IISc is out <a href="https://arxiv.org/abs/2507.23761">here</a></li>
-    <li>🛠️ Started working on granular mechanics with EPFL (ongoing)</li>
+    <li>🛠️ Started working on Inverse Problem with EPFL (ongoing)</li>
   </ul>
 </div>
 <!-- ## 🔬 Research Interests
