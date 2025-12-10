@@ -44,25 +44,25 @@
       <description>&lt;h2 id=&#34;research-experience&#34;&gt;Research Experience&lt;/h2&gt;&#xA;&lt;div style=&#34;display: flex; gap: 20px; align-items: flex-start; margin-bottom: 40px;&#34;&gt;&#xD;&#xA;  &lt;img src=&#34;vizuara.png&#34; alt=&#34;Vizuara AI Labs&#34; style=&#34;width: 140px; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);&#34;&gt;&#xD;&#xA;  &lt;div&gt;&#xD;&#xA;    &lt;strong&gt;Research Scientist, &lt;a href=&#34;https://home.vizuara.ai/&#34;&gt;Vizuara AI Labs&lt;/a&gt;&lt;/strong&gt;&#xD;&#xA;    &lt;p style=&#34;margin-top: 5px;&#34;&gt;&#xD;&#xA;    &lt;em style=&#34;font-size: 0.9em; color: #666;&#34;&gt;Principal Investigator: Dr. Sreedath Panat (MIT PhD)&lt;/a&gt;&lt;/em&gt;&lt;br&gt;&#xD;&#xA;      My research lies at the intersection of &lt;strong&gt;Scientific Machine Learning (SciML)&lt;/strong&gt; and computational mechanics. I am developing scalable learning frameworks for forward and inverse problems in complex physical systems, focusing on coupling data-driven models with governing physical laws.&#xD;&#xA;    &lt;/p&gt;</description>
     </item>
     <item>
-      <title>Beyond Science: Drafting My First Book ✍️</title>
+      <title>Beyond Science: The Novel ✍️</title>
       <link>https://d-saurav.github.io/blog/beyond-science/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://d-saurav.github.io/blog/beyond-science/</guid>
-      <description>&lt;p&gt;Not every passion fits neatly into equations or simulations.&#xA;I believe a person can&amp;rsquo;t be fully defined by their profession, and while engineering and research are core to who I am, I don’t want to be known only as a scientist.&lt;/p&gt;&#xA;&lt;p&gt;What brings me a different kind of fulfillment is the artistic, reflective side — the part that enjoys storytelling, introspection, and creative expression. It’s not about completing myself with work, but about understanding myself through multiple lenses.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;The human experience cannot be fully captured by equations.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;While engineering and research form the bedrock of my career, I have always believed that a person is not defined solely by their profession. True fulfillment lies in the duality of the analytical and the artistic—understanding the world through physics, and understanding oneself through narrative.&lt;/p&gt;&#xA;&lt;p&gt;To that end, I am currently drafting my first novel. It is a work of fiction that blends memory with imagination, exploring the delicate tension between transformation and loss.&lt;/p&gt;</description>
     </item>
     <item>
       <title>CV</title>
       <link>https://d-saurav.github.io/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://d-saurav.github.io/cv/</guid>
-      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://d-saurav.github.io/files/CV.pdf&#34;&gt;Click here for my full academic CV&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://d-saurav.github.io/files/Resume.pdf&#34;&gt;Click here for my 1 page CV (non-academic, coding focused)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://d-saurav.github.io/files/CV.pdf&#34;&gt;Click here for my full academic CV&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;!-- - [Click here for my 1 page CV (non-academic, coding focused)](/files/Resume.pdf) --&gt;</description>
     </item>
     <item>
-      <title>Hobbies 🎨</title>
+      <title>The Abstract &amp; The Analog 🎨</title>
       <link>https://d-saurav.github.io/blog/hobbies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://d-saurav.github.io/blog/hobbies/</guid>
-      <description>&lt;p&gt;When I&amp;rsquo;m not untangling research chaos, I unwind by philosophizing about the cosmos and the planets with aero-astro friends or my space enthusiast guys and waging dramatic battles on the chessboard, where I’m proudly in my ‘intermediate but plotting world domination’ era.&lt;/p&gt;&#xA;&lt;p&gt;I also like playing guitar and love listening to melancholic music, Whenever I spot a guitar in the room, I instinctively pick it up to check if my muscle memory has survived its 3–4 year sabbatical. Some days I surprise myself, other days the strings remind me why I switched to science.&lt;/p&gt;</description>
+      <description>&lt;p&gt;When I step away from the rigors of engineering, I seek clarity in the abstract.&lt;/p&gt;&#xA;&lt;p&gt;You will often find me engaging in dialectics on cosmology and orbital mechanics with fellow aerospace minds, or navigating the strategic complexities of the chessboard. It is a discipline of foresight and patience—a quiet war on sixty-four squares where I am perpetually refining my command of the game.&lt;/p&gt;&#xA;&lt;p&gt;Musically, I find resonance in the melancholic. Whenever I am near a guitar, I instinctively return to the fretboard to test the endurance of muscle memory against a three-year hiatus. It is a tactile, analog escape—a necessary counterbalance to a life defined by scientific precision.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
