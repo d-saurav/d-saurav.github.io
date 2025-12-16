@@ -352,6 +352,168 @@
   <p class="attribution upcase">Saurav Dutta, 2025</p>
   <p class="attribution upcase">© 2025 Saurav Dutta</p>
 </footer>
+<style>
+   
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --card-bg: #ffffff;
+    --card-shadow: rgba(0,0,0,0.05);
+    --card-border: rgba(0,0,0,0.03);
+    --inst-color: #555;
+    --desc-color: #444;
+    --title-color: #111;
+    --link-color: #0077b5;        
+    --link-hover: #005582;       
+  }
+
+   
+  body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --card-bg: #1e1e1e;
+    --card-shadow: rgba(0,0,0,0.5);
+    --card-border: #333;
+    --inst-color: #aaa;
+    --desc-color: #cccccc;
+    --title-color: #ffffff;
+    --link-color: #8ab4f8;        
+    --link-hover: #d2e3fc;       
+  }
+
+   
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+   
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+  }
+
+   
+  body.dark-mode a,
+  body.dark-mode h1 a, body.dark-mode h2 a, body.dark-mode h3 a,
+  body.dark-mode strong a, body.dark-mode em a,
+  body.dark-mode .project-title a,
+  body.dark-mode .experience-title a,
+  body.dark-mode .cv-link a {
+    color: #8ab4f8 !important; 
+  }
+
+   
+  body.dark-mode .project-card {
+    background: var(--card-bg) !important;
+    border: 1px solid var(--card-border) !important;
+    box-shadow: 0 4px 12px var(--card-shadow) !important;
+  }
+  body.dark-mode .project-title { color: var(--title-color) !important; }
+  body.dark-mode .project-inst { color: var(--inst-color) !important; border-bottom: 1px solid #444 !important; }
+  body.dark-mode .project-desc { color: var(--desc-color) !important; }
+
+   
+  .news-section, body.dark-mode .news-section {
+    background-color: transparent !important;
+    border: none !important;
+    border-left: 4px solid #a2a2ff !important;
+    padding-left: 15px;
+  }
+  body.dark-mode .news-section, body.dark-mode .news-section * {
+    color: #e0e0e0 !important;
+  }
+  
+   
+  body.dark-mode footer, body.dark-mode .footer, body.dark-mode .attribution {
+    color: #888888 !important;
+  }
+  footer, .footer {
+    border: none !important;
+    padding-top: 20px !important;
+  }
+  hr { display: none !important; }
+
+   
+  .theme-toggle-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    z-index: 9999;
+    transition: transform 0.2s ease, background-color 0.3s;
+  }
+  .theme-toggle-btn:hover { transform: scale(1.1); }
+</style>
+
+<button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Dark Mode">
+  <i class="fa-solid fa-moon"></i>
+</button>
+
+<script>
+  (function() {
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+    const icon = toggleBtn.querySelector('i');
+
+    function setTheme(theme) {
+      if (theme === 'dark') {
+        body.classList.add('dark-mode');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        body.classList.remove('dark-mode');
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+        localStorage.setItem('theme', 'light');
+      }
+    }
+
+    
+    const savedTheme = localStorage.getItem('theme');
+
+    if (savedTheme) {
+      setTheme(savedTheme);
+    } else {
+      
+      const hour = new Date().getHours();
+      
+      const isNight = hour < 6 || hour >= 18; 
+
+      if (isNight) {
+        setTheme('dark');
+      } else {
+        setTheme('light');
+      }
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      if (body.classList.contains('dark-mode')) {
+        setTheme('light');
+      } else {
+        setTheme('dark');
+      }
+    });
+  })();
+</script>
     <svg width="0" height="0" class="hidden">
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 699.428 699.428" id="copy">
     <path d="M502.714 0H240.428C194.178 0 153 42.425 153 87.429l-25.267.59c-46.228 0-84.019 41.834-84.019 86.838V612c0 45.004 41.179 87.428 87.429 87.428H459c46.249 0 87.428-42.424 87.428-87.428h21.857c46.25 0 87.429-42.424 87.429-87.428v-349.19L502.714 0zM459 655.715H131.143c-22.95 0-43.714-21.441-43.714-43.715V174.857c0-22.272 18.688-42.993 41.638-42.993l23.933-.721v393.429C153 569.576 194.178 612 240.428 612h262.286c0 22.273-20.765 43.715-43.714 43.715zm153-131.143c0 22.271-20.765 43.713-43.715 43.713H240.428c-22.95 0-43.714-21.441-43.714-43.713V87.429c0-22.272 20.764-43.714 43.714-43.714H459c-.351 50.337 0 87.975 0 87.975 0 45.419 40.872 86.882 87.428 86.882H612v306zm-65.572-349.715c-23.277 0-43.714-42.293-43.714-64.981V44.348L612 174.857h-65.572zm-43.714 131.537H306c-12.065 0-21.857 9.77-21.857 21.835 0 12.065 9.792 21.835 21.857 21.835h196.714c12.065 0 21.857-9.771 21.857-21.835 0-12.065-9.792-21.835-21.857-21.835zm0 109.176H306c-12.065 0-21.857 9.77-21.857 21.834 0 12.066 9.792 21.836 21.857 21.836h196.714c12.065 0 21.857-9.77 21.857-21.836 0-12.064-9.792-21.834-21.857-21.834z"></path>
