@@ -66,6 +66,27 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+  <style>
+     
+    html.dark-mode {
+      background-color: #121212 !important;
+    }
+    html.dark-mode body {
+      background-color: #121212 !important;
+      color: #e0e0e0 !important;
+    }
+  </style>
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      
+      if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
+        document.documentElement.classList.add('dark-mode');
+      }
+    })();
+  </script>
 </head>
 
 
@@ -225,37 +246,27 @@ figcaption::before {
   
 
     </main>
-    <footer class="footer pale header-font">
-  <p class="attribution upcase">Saurav Dutta, 2025</p>
-  <p class="attribution upcase">© 2025 Saurav Dutta</p>
+    <footer class="footer pale header-font" style="margin-top: 60px; padding-bottom: 30px; text-align: center;">
+  <p class="attribution upcase" style="font-size: 0.9rem; margin-bottom: 5px;">
+    Saurav Dutta
+  </p>
+  <p class="attribution upcase" style="font-size: 0.8rem; opacity: 0.7;">
+    © 2025 Saurav Dutta
+  </p>
 </footer>
+
 <style>
    
   :root {
+    --link-color: #0077b5;
     --bg-color: #ffffff;
-    --text-color: #333333;
-    --card-bg: #ffffff;
-    --card-shadow: rgba(0,0,0,0.05);
-    --card-border: rgba(0,0,0,0.03);
-    --inst-color: #555;
-    --desc-color: #444;
-    --title-color: #111;
-    --link-color: #0077b5;        
-    --link-hover: #005582;       
+    --text-color: #333;
   }
-
-   
+  
   body.dark-mode {
+    --link-color: #64b5f6;
     --bg-color: #121212;
     --text-color: #e0e0e0;
-    --card-bg: #1e1e1e;
-    --card-shadow: rgba(0,0,0,0.5);
-    --card-border: #333;
-    --inst-color: #aaa;
-    --desc-color: #cccccc;
-    --title-color: #ffffff;
-    --link-color: #8ab4f8;        
-    --link-hover: #d2e3fc;       
   }
 
    
@@ -266,127 +277,168 @@ figcaption::before {
   }
 
    
+   
+  header, nav, .navigation, .nav-container, .navbar {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
+   
+  header div, nav div, .nav-container div {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+   
+  .sticky, .fixed, .is-sticky {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+  
+   
+  body.dark-mode header a, body.dark-mode nav a {
+    color: #e0e0e0 !important;
+  }
+
+   
   a {
+    position: relative;
+    text-decoration: none !important;
     color: var(--link-color);
-    text-decoration: none;
-    transition: color 0.2s ease;
+    transition: color 0.3s ease;
   }
-  a:hover {
-    color: var(--link-hover);
-    text-decoration: underline;
+  a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -1px;
+    left: 0;
+    background-color: var(--link-color);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+  a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  img {
+    animation: fade-up 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  }
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 
    
-  body.dark-mode a,
-  body.dark-mode h1 a, body.dark-mode h2 a, body.dark-mode h3 a,
-  body.dark-mode strong a, body.dark-mode em a,
-  body.dark-mode .project-title a,
-  body.dark-mode .experience-title a,
-  body.dark-mode .cv-link a {
-    color: #8ab4f8 !important; 
-  }
+  hr { display: none !important; border: none !important; }
 
    
+  body.dark-mode a, body.dark-mode h2 a {
+    color: #64b5f6 !important;
+  }
+  body.dark-mode a::after { background-color: #64b5f6; }
+
   body.dark-mode .project-card {
-    background: var(--card-bg) !important;
-    border: 1px solid var(--card-border) !important;
-    box-shadow: 0 4px 12px var(--card-shadow) !important;
+    background: #1e1e1e !important;
+    border: 1px solid #333 !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5) !important;
   }
-  body.dark-mode .project-title { color: var(--title-color) !important; }
-  body.dark-mode .project-inst { color: var(--inst-color) !important; border-bottom: 1px solid #444 !important; }
-  body.dark-mode .project-desc { color: var(--desc-color) !important; }
+  body.dark-mode .project-title { color: #fff !important; }
+  body.dark-mode .project-inst { color: #aaa !important; border-bottom: 1px solid #444 !important; }
+  body.dark-mode .project-desc { color: #ccc !important; }
 
    
   .news-section, body.dark-mode .news-section {
-    background-color: transparent !important;
+    background: transparent !important;
     border: none !important;
     border-left: 4px solid #a2a2ff !important;
     padding-left: 15px;
   }
-  body.dark-mode .news-section, body.dark-mode .news-section * {
-    color: #e0e0e0 !important;
-  }
+  body.dark-mode .news-section * { color: #e0e0e0 !important; }
+  
+  body.dark-mode footer, body.dark-mode .attribution { color: #777 !important; }
+
+   
   
    
-  body.dark-mode footer, body.dark-mode .footer, body.dark-mode .attribution {
-    color: #888888 !important;
+  main, .main, #main, .page-content {
+    background: transparent !important;
+    background-color: transparent !important;
   }
-  footer, .footer {
+
+   
+  article, .first-entry, .post-entry, .home-info, .profile {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
     border: none !important;
-    padding-top: 20px !important;
   }
-  hr { display: none !important; }
+
+   
+  .profile div, .home-info div {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
 
    
   .theme-toggle-btn {
     position: fixed;
-    bottom: 25px;
-    right: 25px;
+    bottom: 30px;
+    right: 30px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: var(--text-color);
-    color: var(--bg-color);
+    background-color: #333;
+    color: #fff;
     border: none;
     cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 22px;
     z-index: 9999;
-    transition: transform 0.2s ease, background-color 0.3s;
+    transition: transform 0.2s;
   }
-  .theme-toggle-btn:hover { transform: scale(1.1); }
+  .theme-toggle-btn:hover { transform: scale(1.15); }
+  
+  body:not(.dark-mode) .theme-toggle-btn {
+    background-color: #f0f0f0;
+    color: #333;
+  }
 </style>
 
-<button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Dark Mode">
+<button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
   <i class="fa-solid fa-moon"></i>
 </button>
 
 <script>
   (function() {
     const toggleBtn = document.getElementById('theme-toggle');
-    const body = document.body;
+    const htmlEl = document.documentElement;
     const icon = toggleBtn.querySelector('i');
-
-    function setTheme(theme) {
-      if (theme === 'dark') {
-        body.classList.add('dark-mode');
-        icon.classList.remove('fa-moon');
-        icon.classList.add('fa-sun');
-        localStorage.setItem('theme', 'dark');
-      } else {
-        body.classList.remove('dark-mode');
-        icon.classList.remove('fa-sun');
-        icon.classList.add('fa-moon');
-        localStorage.setItem('theme', 'light');
-      }
-    }
-
     
-    const savedTheme = localStorage.getItem('theme');
-
-    if (savedTheme) {
-      setTheme(savedTheme);
-    } else {
-      
-      const hour = new Date().getHours();
-      
-      const isNight = hour < 6 || hour >= 18; 
-
-      if (isNight) {
-        setTheme('dark');
-      } else {
-        setTheme('light');
-      }
+    if (htmlEl.classList.contains('dark-mode')) {
+      document.body.classList.add('dark-mode'); 
+      icon.classList.replace('fa-moon', 'fa-sun');
     }
 
     toggleBtn.addEventListener('click', () => {
-      if (body.classList.contains('dark-mode')) {
-        setTheme('light');
+      if (htmlEl.classList.contains('dark-mode')) {
+        htmlEl.classList.remove('dark-mode');
+        document.body.classList.remove('dark-mode');
+        icon.classList.replace('fa-sun', 'fa-moon');
+        localStorage.setItem('theme', 'light');
       } else {
-        setTheme('dark');
+        htmlEl.classList.add('dark-mode');
+        document.body.classList.add('dark-mode');
+        icon.classList.replace('fa-moon', 'fa-sun');
+        localStorage.setItem('theme', 'dark');
       }
     });
   })();
