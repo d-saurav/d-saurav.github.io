@@ -219,6 +219,7 @@
     transform-origin: bottom left;
   }
 
+   
   img {
     animation: fade-up 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
   }
@@ -277,23 +278,25 @@
   }
 
    
+   
+   
+  
+   
   body.pub-mode main .row,
-  body.pub-mode main > div > div,
-  body.exp-mode main > div > div, 
-  body.exp-mode .entry-content > div {
-    background: var(--glass-bg);
+  body.pub-mode main > div > div {
+    background: var(--glass-bg) !important;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid var(--glass-border);
-    box-shadow: 0 4px 20px var(--glass-shadow);
-    border-radius: 12px;  
+    border: 1px solid var(--glass-border) !important;
+    box-shadow: 0 4px 20px var(--glass-shadow) !important;
+    border-radius: 12px;
     padding: 25px;
     margin-bottom: 30px !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-wrap: wrap; 
-    align-items: flex-start;  
-    gap: 20px;
+    align-items: center;
+    
      
     opacity: 0; 
     animation: fadeInUpCard 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
@@ -301,41 +304,12 @@
 
    
   body.pub-mode main .row:hover,
-  body.pub-mode main > div > div:hover,
-  body.exp-mode main > div > div:hover,
-  body.exp-mode .entry-content > div:hover {
+  body.pub-mode main > div > div:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-    border-left: 4px solid var(--link-color);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15) !important;
+    border-left: 4px solid var(--link-color) !important;
   }
 
-   
-   
-   
-  
-   
-  body.exp-mode img {
-    border-radius: 12px !important; 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);  
-    background: transparent !important;  
-    padding: 0 !important;  
-    max-width: 90px;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-  }
-  
-   
-  body.exp-mode main > div > div:hover img {
-    transform: scale(1.05);
-  }
-
-   
-
-
-   
-   
-   
-  
    
   body.pub-mode img {
     border-radius: 6px;
@@ -397,8 +371,6 @@
     color: var(--text-color);
     opacity: 0.8;
   }
-  
-   
   body.pub-mode h2 a, body.pub-mode h3 a, body.pub-mode h4 a {
     background: transparent !important;
     padding: 0 !important;
@@ -407,6 +379,61 @@
     font-weight: 700;
     box-shadow: none !important;
   }
+
+
+   
+   
+   
+  
+   
+  body.exp-mode main > div > div, 
+  body.exp-mode .entry-content > div,
+  body.exp-mode .post-content > div {
+     
+    background: transparent !important;
+    backdrop-filter: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    
+     
+    border-left: 3px solid transparent !important; 
+    padding-left: 15px;
+    margin-bottom: 30px;
+    border-radius: 0 10px 10px 0;
+    
+    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    
+     
+    opacity: 0; 
+    animation: fadeInUpCard 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  }
+
+   
+  body.exp-mode main > div > div:hover,
+  body.exp-mode .entry-content > div:hover,
+  body.exp-mode .post-content > div:hover {
+     
+    border-left-color: var(--link-color) !important;
+     
+    transform: translateX(10px);
+     
+    background: linear-gradient(to right, rgba(0, 119, 181, 0.05), transparent) !important;
+  }
+
+   
+  body.exp-mode img {
+    border-radius: 12px !important; 
+    background: transparent !important;
+    box-shadow: none !important;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  
+  body.exp-mode main > div > div:hover img,
+  body.exp-mode .entry-content > div:hover img {
+    transform: scale(1.1);  
+    filter: drop-shadow(0 8px 12px rgba(0,0,0,0.15));
+  }
+
 
    
    
@@ -462,7 +489,8 @@
     
     if (href.indexOf("experience") > -1 || href.indexOf("publications") > -1) {
         setTimeout(function() {
-            const rows = document.querySelectorAll('main .row, main > div > div, .entry-content > div');
+            
+            const rows = document.querySelectorAll('main .row, main > div > div, .entry-content > div, .post-content > div');
             rows.forEach((row, index) => {
                 row.style.animationDelay = (index * 0.15) + "s";
             });
