@@ -137,7 +137,21 @@
     <div>
       <div class="home_inner count-figure count-h2h3">
         <style>
-/* --- 1. SOCIAL ICONS --- */
+/* --- VARIABLES --- */
+:root {
+  --accent-blue: #0077b5;
+  --glass-bg: rgba(249, 249, 251, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --glass-shadow: rgba(0, 0, 0, 0.1);
+}
+body.dark-mode {
+  --accent-blue: #64b5f6;
+  --glass-bg: rgba(30, 30, 30, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* --- 1. VIBRANT ICONS --- */
 .social-links-container {
   display: flex;
   justify-content: center;
@@ -149,7 +163,8 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: #555;
+  color: var(--accent-blue);
+  opacity: 0.8;
   transition: all 0.3s ease;
 }
 .social-icon-link svg {
@@ -157,45 +172,54 @@
   height: 24px;
   fill: currentColor;
 }
-.social-icon-link:hover { transform: translateY(-3px); }
-.social-icon-link.email:hover { color: #d93025; }
-.social-icon-link.scholar:hover { color: #4285F4; }
-.social-icon-link.linkedin:hover { color: #0077b5; }
+.social-icon-link:hover {
+  transform: translateY(-5px) scale(1.1);
+  opacity: 1;
+  filter: drop-shadow(0 0 5px var(--accent-blue));
+}
 
-/* --- 2. PAGE TWEAKS --- */
-h2::before { content: none !important; counter-increment: none !important; }
-h2 { margin-top: 1rem !important; }
-
-/* --- 3. NEWS SECTION --- */
+/* --- 2. GLASS NEWS SECTION --- */
 .news-section {
   margin-top: 2rem;
-  padding: 1rem 1.2rem;
-  background-color: rgba(249, 249, 251, 0.5);
-  border-left: 4px solid #a2a2ff;
-  border-radius: 6px;
+  padding: 1.5rem;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 32px 0 var(--glass-shadow);
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-blue);
 }
-.news-section p { margin-top: 0; font-weight: 600; font-size: 1.05rem; }
+.news-section p { margin-top: 0; font-weight: 600; color: var(--accent-blue); }
 .news-section ul { margin: 0.5rem 0 0 1.2rem; }
 
-/* --- 4. THE BOX KILLER (CRITICAL FIX) --- */
-/* This forces the container to be invisible so only your photo/text shows */
+/* --- 3. THE BOX KILLER (Transparency Fix) --- */
 article, .first-entry, .post-entry, .page-content, .main-content, .home-info, .entry-content {
     background: transparent !important;
     background-color: transparent !important;
     box-shadow: none !important;
     border: none !important;
 }
-/* This targets the specific grey box seen in your screenshot */
+/* Fix for the code block issue */
 pre, code {
     background: transparent !important;
     border: none !important;
-    box-shadow: none !important;
     padding: 0 !important;
 }
+main, .main { background: transparent !important; }
+
+/* --- 4. PROFILE IMAGE --- */
+.profile-img-container img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+.profile-img-container img:hover { transform: scale(1.02); }
 </style>
 <div style="display: flex; align-items: flex-start; gap: 40px; flex-wrap: wrap;">
-<div style="flex: 1; min-width: 250px; max-width: 300px; margin: 0 auto;">
-<img src="teaser.png" alt="Saurav Dutta" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+<div style="flex: 1; min-width: 250px; max-width: 300px; margin: 0 auto;" class="profile-img-container">
+<img src="teaser.png" alt="Saurav Dutta">
 <p style="text-align: center; font-style: italic; margin-top: 10px; color: #666; font-size: 0.95rem;">
 Bengaluru, India, 2024
 </p>
@@ -229,269 +253,12 @@ Thanks for visiting! Dive into my research to see what I actually do.
 <div class="news-section">
 <p><em>News:</em></p>
 <ul>
-<li>Excited to announce that I have joined Vizuara AI Labs as a <em>Research Scientist</em>!</li>
+<li>🎉 Excited to announce that I have joined Vizuara AI Labs as a <em>Research Scientist</em>!</li>
 <li>🎉 My work on <em>Machine Learning based Materials</em> from IISc is out <a href="https://arxiv.org/abs/2509.11784">here</a></li>
 <li>🎉 My work on <em>Non-reciprocal Metamaterials</em> from IISc is out <a href="https://arxiv.org/abs/2507.23761">here</a></li>
 <li>🛠️ Started working on granular mechanics with EPFL (ongoing)</li>
 </ul>
 </div>
-<!-- ## 🔬 Research Interests
-
-- Inverse design  
-- Architected materials  
-- Deployable/origami structures  
-- Soft robotics  
-- Geometric computing  
-
---- -->
-<!-- ## 📚 Publications/Book Chapters
-
-
-
-<div class="pub-list">
-
-	
-
-
-<div class="pub-item">
-	 
-		<figure class="pub-thumbnail">
-		<img src="https://d-saurav.github.io/publications/hetero.jpg">
-		</figure>
-	
-	<div class="pub-info">
-	<div class="pub-title">Hetero-EUCLID: Interpretable model discovery for heterogeneous hyperelastic materials using stress-free unsupervised learning</div>
-	<div class="pub-author">
-		
-		
-		
-		
-		Kanhaiya lal Chaurasiya,
-		
-		
-		
-		<b>Saurav Dutta</b>,
-		
-		
-		
-		Siddanth Kumar,
-		
-		
-		
-		Akshay Joshi^
-
-		
-		<span class="pale">
-		(<span>*co-first author  </span><span>^corresponding author  </span>)
-	</span>
-		
-	</div>
-	<div class="pub-status">
-		<i>
-		
-			<b>Computer Methods in Applied Mechanics and Engineering (CMAME)</b>
-			
-		
-		</i>
-	</div>
-	<div class="pub-links">
-		<a href=https://d-saurav.github.io/publications/hetero-euclid/>Project page</a>
-		 | <a href=https://d-saurav.github.io/papers/Hetero-EUCLID.pdf>Paper</a>
-		
-	</div>
-	<div class="pub-description pale">
-		🧠 Unsupervised model discovery without stress input — interpretable and automatic.
-	</div>
-	</div>
-</div>
-
-	
-
-
-<div class="pub-item">
-	 
-		<figure class="pub-thumbnail">
-		<img src="https://d-saurav.github.io/publications/non-reciprocal.jpg">
-		</figure>
-	
-	<div class="pub-info">
-	<div class="pub-title">Wave propagation in an elastic lattice with non-reciprocal stiffness and engineered damping</div>
-	<div class="pub-author">
-		
-		
-		
-		
-		Harshit Kumar Sandhu,
-		
-		
-		
-		<b>Saurav Dutta</b>,
-		
-		
-		
-		Rajesh Chaunsali^
-
-		
-		<span class="pale">
-		(<span>*sole author  </span><span>^corresponding author  </span>)
-	</span>
-		
-	</div>
-	<div class="pub-status">
-		<i>
-		
-			<b>Journal of Acoustical Society of America</b>
-			 (Special issue on Active and Tunable Acoustic Metamaterials)
-		
-		</i>
-	</div>
-	<div class="pub-links">
-		<a href=https://d-saurav.github.io/publications/wave-propagation/>Project page</a>
-		 | <a href=https://d-saurav.github.io/papers/wave_propagation_in_an_elastic_lattice.pdf>Paper</a>
-		
-	</div>
-	<div class="pub-description pale">
-		 🔁 Non-reciprocity tunes the wave&#39;s group velocity, frequency and amplification rate
-	</div>
-	</div>
-</div>
-
-	
-
-
-<div class="pub-item">
-	 
-		<figure class="pub-thumbnail">
-		<img src="https://d-saurav.github.io/publications/ssi.jpg">
-		</figure>
-	
-	<div class="pub-info">
-	<div class="pub-title">Identification of critical ground motion features for seismic fragility studies considering soil-structure interaction</div>
-	<div class="pub-author">
-		
-		
-		
-		
-		Srishti Singh,
-		
-		
-		
-		Manish Kumar,
-		
-		
-		
-		<b>Saurav Dutta</b>,
-		
-		
-		
-		Vishwajit Anand^
-
-		
-		<span class="pale">
-		(<span>*sole author  </span><span>^corresponding author  </span>)
-	</span>
-		
-	</div>
-	<div class="pub-status">
-		<i>
-		
-			<b>Journal of Vibration Engineering and Technologies</b>
-			 (under review)
-		
-		</i>
-	</div>
-	<div class="pub-links">
-		<a href=https://d-saurav.github.io/publications/identification-of-critical-ground-motion/>Project page</a>
-		
-		
-	</div>
-	<div class="pub-description pale">
-		
-	</div>
-	</div>
-</div>
-
-	
-
-
-<div class="pub-item">
-	 
-		<figure class="pub-thumbnail">
-		<img src="https://d-saurav.github.io/publications/ground_motions.jpg">
-		</figure>
-	
-	<div class="pub-info">
-	<div class="pub-title">Framework for Ground Motion Characterization</div>
-	<div class="pub-author">
-		
-		
-		
-		
-		<b>Saurav Dutta</b>*,
-		
-		
-		
-		Vishwajit Anand^
-
-		
-		<span class="pale">
-		(<span>*sole first author  </span><span>^corresponding author  </span>)
-	</span>
-		
-	</div>
-	<div class="pub-status">
-		<i>
-		
-			<b>In Seismic Hazard Analyses, Wave Propagation and Site Characterization, Springer Nature Singapore, pp. 355–366</b>
-			
-		
-		</i>
-	</div>
-	<div class="pub-links">
-		<a href=https://d-saurav.github.io/publications/framework-for-ground-motions/>Project page</a>
-		 | <a href=https://link.springer.com/chapter/10.1007/978-981-96-1352-6_30>Paper</a>
-		
-	</div>
-	<div class="pub-description pale">
-		
-	</div>
-	</div>
-</div>
-
-</div>
-
-
---- -->
-<!-- ## 🧪 Research Experience
-
-Prior to joining <a href="https://home.vizuara.ai/">Vizuara AI Labs</a> and collaborating with <a href="https://www.epfl.ch/labs/lmd/">Prof. Kostas</a> from <a href="https://www.epfl.ch/en/">EPFL</a>, I worked for over two years as a Research Associate at the <a href="https://iisc.ac.in/">Indian Institute of Science (IISc), Bangalore</a>, focusing on the intersection of wave physics, materials, machine learning and scientific computing.
-
-At IISc, I began in <a href="https://rajeshchaunsali.github.io/">Prof. Rajesh Chaunsali’s group</a>, investigating wave control in non-reciprocal spring-damper lattices. I developed MATLAB algorithms to study dynamic behavior in non-reciprocal systems and simultaneously worked on building an active experimental setup using motors. I implemented low-level motor synchronization in Python and Arduino (parallely on C++), enabling real-time modulation of pendulums with programmable springs.
-
-Subsequently, I joined <a href="https://d3lab-iisc.github.io/">Prof. Akshay Joshi’s group</a> to work on inverse design of heterogenous non-linear materials. I contributed to the EUCLID framework by developing random seed-based algorithms for material segmentation and building physics-informed pipelines to infer hyperelastic properties from displacement data. This work integrated Finite Element Analysis, unsupervised learning, and PDE solvers, and was presented at <a href="https://esmc2025.sciencesconf.org/">Europian Solid Mechanics Conference (ESMC) 2025</a> in Lyon, France.
-
-My computational foundation was laid during my undergraduate studies at <a href="https://www.nits.ac.in/?loadIn=defaultBrowser">NIT Silchar</a>. I collaborated with <a href="https://ce.nits.ac.in/faculties/atanu-sahu">Prof. Atanu Sahu</a> on finite element modeling of laminated composite plates under thermal and dynamic loading, later extended to hygrothermal coupling. Prior to that, I worked with <a href="https://iitbhu.ac.in/dept/civ/people/anandciv">Prof. Vishwajit Anand</a> at the <a href="https://iitbhu.ac.in/">Indian Institute of Technology (IIT) BHU, Varanasi</a>, where I developed MATLAB scripts to estimate dynamic parameters of structures under seismic waves.
-
---- -->
-<!-- ## 🎤 Invited Talks
-
-### Guest Lecturer  
-**“Wave Propagation in Designed Materials”**  
-*Indian Institute of Science, Bengaluru, November 2023*
-
-- Introduced the fundamentals of non-reciprocal wave behavior in metamterials.  
-- Explained dispersion phenomena and band gap formation in non-reciorocal systems.   
-- Engaged in interactive discussion with graduate students and researchers on applications in phononic materials. -->
-<!-- - Guest Lecturer--*“Wave Propagation in Designed Materials”*, Indian Institute of Science, Bengaluru, 2023 -->
-<!-- - *“Mechanics of Granular Structures”*, EPFL Student Meet, 2024   -->
-<hr>
-<!-- ## 🎨 Hobbies
-
-When I'm not untangling research chaos, I unwind by philosophizing about the cosmos and the planets with aero-astro friends or my space enthusiast guys and waging dramatic battles on the chessboard, where I’m proudly in my ‘intermediate but plotting world domination’ era.
-
-I also like playing guitar and love listening to melancholic music, Whenever I spot a guitar in the room, I instinctively pick it up to check if my muscle memory has survived its 3–4 year sabbatical. Some days I surprise myself, other days the strings remind me why I switched to science. -->
-<hr>
-
       </div>
     </div>
   </article>
@@ -512,12 +279,22 @@ I also like playing guitar and love listening to melancholic music, Whenever I s
     --link-color: #0077b5;
     --bg-color: #ffffff;
     --text-color: #333;
+    
+     
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(0, 0, 0, 0.05);
+    --glass-shadow: rgba(0, 0, 0, 0.05);
   }
   
   body.dark-mode {
     --link-color: #64b5f6;
     --bg-color: #121212;
     --text-color: #e0e0e0;
+    
+     
+    --glass-bg: rgba(30, 30, 30, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-shadow: rgba(0, 0, 0, 0.3);
   }
 
    
@@ -528,27 +305,20 @@ I also like playing guitar and love listening to melancholic music, Whenever I s
   }
 
    
-   
   header, nav, .navigation, .nav-container, .navbar {
     background: transparent !important;
     background-color: transparent !important;
     border: none !important;
     box-shadow: none !important;
   }
-  
-   
   header div, nav div, .nav-container div {
     background: transparent !important;
     box-shadow: none !important;
   }
-
-   
   .sticky, .fixed, .is-sticky {
     background: transparent !important;
     box-shadow: none !important;
   }
-  
-   
   body.dark-mode header a, body.dark-mode nav a {
     color: #e0e0e0 !important;
   }
@@ -587,13 +357,9 @@ I also like playing guitar and love listening to melancholic music, Whenever I s
 
    
   hr { display: none !important; border: none !important; }
-
-   
-  body.dark-mode a, body.dark-mode h2 a {
-    color: #64b5f6 !important;
-  }
+  body.dark-mode a, body.dark-mode h2 a { color: #64b5f6 !important; }
   body.dark-mode a::after { background-color: #64b5f6; }
-
+  
   body.dark-mode .project-card {
     background: #1e1e1e !important;
     border: 1px solid #333 !important;
@@ -602,8 +368,7 @@ I also like playing guitar and love listening to melancholic music, Whenever I s
   body.dark-mode .project-title { color: #fff !important; }
   body.dark-mode .project-inst { color: #aaa !important; border-bottom: 1px solid #444 !important; }
   body.dark-mode .project-desc { color: #ccc !important; }
-
-   
+  
   .news-section, body.dark-mode .news-section {
     background: transparent !important;
     border: none !important;
@@ -611,29 +376,186 @@ I also like playing guitar and love listening to melancholic music, Whenever I s
     padding-left: 15px;
   }
   body.dark-mode .news-section * { color: #e0e0e0 !important; }
-  
   body.dark-mode footer, body.dark-mode .attribution { color: #777 !important; }
 
-   
-  
    
   main, .main, #main, .page-content {
     background: transparent !important;
     background-color: transparent !important;
   }
-
-   
   article, .first-entry, .post-entry, .home-info, .profile {
     background: transparent !important;
     background-color: transparent !important;
     box-shadow: none !important;
     border: none !important;
   }
-
-   
   .profile div, .home-info div {
     background: transparent !important;
     box-shadow: none !important;
+  }
+
+   
+   
+   
+  
+   
+  @keyframes fadeInUpCard {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+   
+   
+   
+  
+   
+  body.exp-mode main p, 
+  body.exp-mode .entry-content > *,
+  body.exp-mode .post-content > * {
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    
+     
+    border-left: 3px solid transparent; 
+    padding-left: 10px; 
+    margin-left: -13px;  
+    border-radius: 0 8px 8px 0;  
+    
+     
+    opacity: 0; 
+    animation: fadeInUpCard 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  }
+
+   
+  body.exp-mode main p:hover, 
+  body.exp-mode .entry-content > *:hover,
+  body.exp-mode .post-content > *:hover {
+     
+    border-left: 4px solid var(--link-color);
+    
+     
+    padding-left: 25px; 
+    
+     
+    background: linear-gradient(90deg, rgba(0, 119, 181, 0.06), transparent);
+  }
+
+   
+  body.exp-mode img {
+    background: transparent !important;
+    box-shadow: none !important;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);  
+  }
+  
+   
+  body.exp-mode *:hover > img {
+    transform: scale(1.15);  
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.15));  
+  }
+
+
+   
+   
+   
+  
+  body.pub-mode main .row,
+  body.pub-mode main > div > div {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 4px 20px var(--glass-shadow);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    opacity: 0; 
+    animation: fadeInUpCard 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  }
+
+  body.pub-mode main .row:hover,
+  body.pub-mode main > div > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    border-left: 4px solid var(--link-color);
+  }
+
+  body.pub-mode img {
+    border-radius: 6px;
+    transition: transform 0.4s ease;
+  }
+  body.pub-mode .row:hover img,
+  body.pub-mode main > div > div:hover img {
+    transform: scale(1.02);
+  }
+
+   
+  body.pub-mode .row a[href]:not(:first-child),
+  body.pub-mode main > div > div a[href]:not(:first-child) {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 6px 16px;
+    border-radius: 50px;
+    background-color: rgba(0, 119, 181, 0.08);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none !important;
+    border: 1px solid transparent;
+  }
+
+   
+  body.pub-mode .row a[href*="paper"]::before,
+  body.pub-mode .row a[href*="arxiv"]::before,
+  body.pub-mode .row a[href*="pdf"]::before,
+  body.pub-mode main > div > div a[href*="paper"]::before,
+  body.pub-mode main > div > div a[href*="arxiv"]::before,
+  body.pub-mode main > div > div a[href*="pdf"]::before {
+    content: "📄 ";
+  }
+  body.pub-mode .row a[href*="project"]::before,
+  body.pub-mode .row a[href*="code"]::before,
+  body.pub-mode main > div > div a[href*="project"]::before,
+  body.pub-mode main > div > div a[href*="code"]::before {
+    content: "🔗 ";
+  }
+  
+  body.pub-mode .row a[href]:not(:first-child):hover,
+  body.pub-mode main > div > div a[href]:not(:first-child):hover {
+    background-color: var(--link-color);
+    color: #fff !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+   
+  body.pub-mode em {
+    display: block;
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.8;
+  }
+  body.pub-mode h2 a, body.pub-mode h3 a, body.pub-mode h4 a {
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+    font-size: 1.1rem;
+    font-weight: 700;
+    box-shadow: none !important;
+  }
+
+   
+   
+   
+  header a::before, nav a::before, .navigation a::before {
+    content: none !important;
+    display: none !important;
   }
 
    
@@ -657,11 +579,7 @@ I also like playing guitar and love listening to melancholic music, Whenever I s
     transition: transform 0.2s;
   }
   .theme-toggle-btn:hover { transform: scale(1.15); }
-  
-  body:not(.dark-mode) .theme-toggle-btn {
-    background-color: #f0f0f0;
-    color: #333;
-  }
+  body:not(.dark-mode) .theme-toggle-btn { background-color: #f0f0f0; color: #333; }
 </style>
 
 <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
@@ -673,6 +591,27 @@ I also like playing guitar and love listening to melancholic music, Whenever I s
     const toggleBtn = document.getElementById('theme-toggle');
     const htmlEl = document.documentElement;
     const icon = toggleBtn.querySelector('i');
+    const href = window.location.href.toLowerCase();
+
+    
+    if (href.indexOf("experience") > -1) {
+        document.body.classList.add("exp-mode");
+    }
+    else if (href.indexOf("publications") > -1) {
+        document.body.classList.add("pub-mode");
+    }
+    
+    
+    if (href.indexOf("experience") > -1 || href.indexOf("publications") > -1) {
+        setTimeout(function() {
+            
+            const rows = document.querySelectorAll('main .row, main > div > div, .entry-content > *, main p');
+            rows.forEach((row, index) => {
+                row.style.animationDelay = (index * 0.15) + "s";
+            });
+        }, 100);
+    }
+
     
     if (htmlEl.classList.contains('dark-mode')) {
       document.body.classList.add('dark-mode'); 

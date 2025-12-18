@@ -167,12 +167,22 @@ Introduced the fundamentals of non-reciprocal">
     --link-color: #0077b5;
     --bg-color: #ffffff;
     --text-color: #333;
+    
+     
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(0, 0, 0, 0.05);
+    --glass-shadow: rgba(0, 0, 0, 0.05);
   }
   
   body.dark-mode {
     --link-color: #64b5f6;
     --bg-color: #121212;
     --text-color: #e0e0e0;
+    
+     
+    --glass-bg: rgba(30, 30, 30, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-shadow: rgba(0, 0, 0, 0.3);
   }
 
    
@@ -183,27 +193,20 @@ Introduced the fundamentals of non-reciprocal">
   }
 
    
-   
   header, nav, .navigation, .nav-container, .navbar {
     background: transparent !important;
     background-color: transparent !important;
     border: none !important;
     box-shadow: none !important;
   }
-  
-   
   header div, nav div, .nav-container div {
     background: transparent !important;
     box-shadow: none !important;
   }
-
-   
   .sticky, .fixed, .is-sticky {
     background: transparent !important;
     box-shadow: none !important;
   }
-  
-   
   body.dark-mode header a, body.dark-mode nav a {
     color: #e0e0e0 !important;
   }
@@ -242,13 +245,9 @@ Introduced the fundamentals of non-reciprocal">
 
    
   hr { display: none !important; border: none !important; }
-
-   
-  body.dark-mode a, body.dark-mode h2 a {
-    color: #64b5f6 !important;
-  }
+  body.dark-mode a, body.dark-mode h2 a { color: #64b5f6 !important; }
   body.dark-mode a::after { background-color: #64b5f6; }
-
+  
   body.dark-mode .project-card {
     background: #1e1e1e !important;
     border: 1px solid #333 !important;
@@ -257,8 +256,7 @@ Introduced the fundamentals of non-reciprocal">
   body.dark-mode .project-title { color: #fff !important; }
   body.dark-mode .project-inst { color: #aaa !important; border-bottom: 1px solid #444 !important; }
   body.dark-mode .project-desc { color: #ccc !important; }
-
-   
+  
   .news-section, body.dark-mode .news-section {
     background: transparent !important;
     border: none !important;
@@ -266,29 +264,186 @@ Introduced the fundamentals of non-reciprocal">
     padding-left: 15px;
   }
   body.dark-mode .news-section * { color: #e0e0e0 !important; }
-  
   body.dark-mode footer, body.dark-mode .attribution { color: #777 !important; }
 
-   
-  
    
   main, .main, #main, .page-content {
     background: transparent !important;
     background-color: transparent !important;
   }
-
-   
   article, .first-entry, .post-entry, .home-info, .profile {
     background: transparent !important;
     background-color: transparent !important;
     box-shadow: none !important;
     border: none !important;
   }
-
-   
   .profile div, .home-info div {
     background: transparent !important;
     box-shadow: none !important;
+  }
+
+   
+   
+   
+  
+   
+  @keyframes fadeInUpCard {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+   
+   
+   
+  
+   
+  body.exp-mode main p, 
+  body.exp-mode .entry-content > *,
+  body.exp-mode .post-content > * {
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    
+     
+    border-left: 3px solid transparent; 
+    padding-left: 10px; 
+    margin-left: -13px;  
+    border-radius: 0 8px 8px 0;  
+    
+     
+    opacity: 0; 
+    animation: fadeInUpCard 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  }
+
+   
+  body.exp-mode main p:hover, 
+  body.exp-mode .entry-content > *:hover,
+  body.exp-mode .post-content > *:hover {
+     
+    border-left: 4px solid var(--link-color);
+    
+     
+    padding-left: 25px; 
+    
+     
+    background: linear-gradient(90deg, rgba(0, 119, 181, 0.06), transparent);
+  }
+
+   
+  body.exp-mode img {
+    background: transparent !important;
+    box-shadow: none !important;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);  
+  }
+  
+   
+  body.exp-mode *:hover > img {
+    transform: scale(1.15);  
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.15));  
+  }
+
+
+   
+   
+   
+  
+  body.pub-mode main .row,
+  body.pub-mode main > div > div {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 4px 20px var(--glass-shadow);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    opacity: 0; 
+    animation: fadeInUpCard 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  }
+
+  body.pub-mode main .row:hover,
+  body.pub-mode main > div > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    border-left: 4px solid var(--link-color);
+  }
+
+  body.pub-mode img {
+    border-radius: 6px;
+    transition: transform 0.4s ease;
+  }
+  body.pub-mode .row:hover img,
+  body.pub-mode main > div > div:hover img {
+    transform: scale(1.02);
+  }
+
+   
+  body.pub-mode .row a[href]:not(:first-child),
+  body.pub-mode main > div > div a[href]:not(:first-child) {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 6px 16px;
+    border-radius: 50px;
+    background-color: rgba(0, 119, 181, 0.08);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none !important;
+    border: 1px solid transparent;
+  }
+
+   
+  body.pub-mode .row a[href*="paper"]::before,
+  body.pub-mode .row a[href*="arxiv"]::before,
+  body.pub-mode .row a[href*="pdf"]::before,
+  body.pub-mode main > div > div a[href*="paper"]::before,
+  body.pub-mode main > div > div a[href*="arxiv"]::before,
+  body.pub-mode main > div > div a[href*="pdf"]::before {
+    content: "📄 ";
+  }
+  body.pub-mode .row a[href*="project"]::before,
+  body.pub-mode .row a[href*="code"]::before,
+  body.pub-mode main > div > div a[href*="project"]::before,
+  body.pub-mode main > div > div a[href*="code"]::before {
+    content: "🔗 ";
+  }
+  
+  body.pub-mode .row a[href]:not(:first-child):hover,
+  body.pub-mode main > div > div a[href]:not(:first-child):hover {
+    background-color: var(--link-color);
+    color: #fff !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+   
+  body.pub-mode em {
+    display: block;
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.8;
+  }
+  body.pub-mode h2 a, body.pub-mode h3 a, body.pub-mode h4 a {
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+    font-size: 1.1rem;
+    font-weight: 700;
+    box-shadow: none !important;
+  }
+
+   
+   
+   
+  header a::before, nav a::before, .navigation a::before {
+    content: none !important;
+    display: none !important;
   }
 
    
@@ -312,11 +467,7 @@ Introduced the fundamentals of non-reciprocal">
     transition: transform 0.2s;
   }
   .theme-toggle-btn:hover { transform: scale(1.15); }
-  
-  body:not(.dark-mode) .theme-toggle-btn {
-    background-color: #f0f0f0;
-    color: #333;
-  }
+  body:not(.dark-mode) .theme-toggle-btn { background-color: #f0f0f0; color: #333; }
 </style>
 
 <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
@@ -328,6 +479,27 @@ Introduced the fundamentals of non-reciprocal">
     const toggleBtn = document.getElementById('theme-toggle');
     const htmlEl = document.documentElement;
     const icon = toggleBtn.querySelector('i');
+    const href = window.location.href.toLowerCase();
+
+    
+    if (href.indexOf("experience") > -1) {
+        document.body.classList.add("exp-mode");
+    }
+    else if (href.indexOf("publications") > -1) {
+        document.body.classList.add("pub-mode");
+    }
+    
+    
+    if (href.indexOf("experience") > -1 || href.indexOf("publications") > -1) {
+        setTimeout(function() {
+            
+            const rows = document.querySelectorAll('main .row, main > div > div, .entry-content > *, main p');
+            rows.forEach((row, index) => {
+                row.style.animationDelay = (index * 0.15) + "s";
+            });
+        }, 100);
+    }
+
     
     if (htmlEl.classList.contains('dark-mode')) {
       document.body.classList.add('dark-mode'); 
