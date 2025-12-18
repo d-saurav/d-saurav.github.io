@@ -296,83 +296,66 @@ Click here for my full academic CV
   }
 
    
-   
-   
-  
-   
-  body.exp-mode main p, 
-  body.exp-mode .entry-content > *,
-  body.exp-mode .post-content > * {
-    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-    
-     
-    border-left: 3px solid transparent; 
-    padding-left: 10px; 
-    margin-left: -13px;  
-    border-radius: 0 8px 8px 0;  
-    
-     
-    opacity: 0; 
-    animation: fadeInUpCard 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
-  }
-
-   
-  body.exp-mode main p:hover, 
-  body.exp-mode .entry-content > *:hover,
-  body.exp-mode .post-content > *:hover {
-     
-    border-left: 4px solid var(--link-color);
-    
-     
-    padding-left: 25px; 
-    
-     
-    background: linear-gradient(90deg, rgba(0, 119, 181, 0.06), transparent);
-  }
-
-   
-  body.exp-mode img {
-    background: transparent !important;
-    box-shadow: none !important;
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);  
-  }
-  
-   
-  body.exp-mode *:hover > img {
-    transform: scale(1.15);  
-    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.15));  
-  }
-
-
-   
-   
-   
-  
   body.pub-mode main .row,
-  body.pub-mode main > div > div {
+  body.pub-mode main > div > div,
+  body.exp-mode main > div > div, 
+  body.exp-mode .entry-content > div {
     background: var(--glass-bg);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid var(--glass-border);
     box-shadow: 0 4px 20px var(--glass-shadow);
-    border-radius: 12px;
+    border-radius: 12px;  
     padding: 25px;
     margin-bottom: 30px !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-wrap: wrap; 
-    align-items: center;
+    align-items: flex-start;  
+    gap: 20px;
+     
     opacity: 0; 
     animation: fadeInUpCard 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
   }
 
+   
   body.pub-mode main .row:hover,
-  body.pub-mode main > div > div:hover {
+  body.pub-mode main > div > div:hover,
+  body.exp-mode main > div > div:hover,
+  body.exp-mode .entry-content > div:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 30px rgba(0,0,0,0.15);
     border-left: 4px solid var(--link-color);
   }
 
+   
+   
+   
+  
+   
+  body.exp-mode img {
+    border-radius: 12px !important; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);  
+    background: transparent !important;  
+    padding: 0 !important;  
+    max-width: 90px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+   
+  body.exp-mode main > div > div:hover img {
+    transform: scale(1.05);
+  }
+
+   
+
+
+   
+   
+   
+  
+   
   body.pub-mode img {
     border-radius: 6px;
     transition: transform 0.4s ease;
@@ -408,6 +391,7 @@ Click here for my full academic CV
   body.pub-mode main > div > div a[href*="pdf"]::before {
     content: "📄 ";
   }
+  
   body.pub-mode .row a[href*="project"]::before,
   body.pub-mode .row a[href*="code"]::before,
   body.pub-mode main > div > div a[href*="project"]::before,
@@ -432,6 +416,8 @@ Click here for my full academic CV
     color: var(--text-color);
     opacity: 0.8;
   }
+  
+   
   body.pub-mode h2 a, body.pub-mode h3 a, body.pub-mode h4 a {
     background: transparent !important;
     padding: 0 !important;
@@ -495,8 +481,7 @@ Click here for my full academic CV
     
     if (href.indexOf("experience") > -1 || href.indexOf("publications") > -1) {
         setTimeout(function() {
-            
-            const rows = document.querySelectorAll('main .row, main > div > div, .entry-content > *, main p');
+            const rows = document.querySelectorAll('main .row, main > div > div, .entry-content > div');
             rows.forEach((row, index) => {
                 row.style.animationDelay = (index * 0.15) + "s";
             });
