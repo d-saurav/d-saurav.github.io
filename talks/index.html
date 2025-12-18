@@ -189,7 +189,7 @@ Introduced the fundamentals of non-reciprocal">
   body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: color 0.3s ease;
   }
 
    
@@ -287,7 +287,6 @@ Introduced the fundamentals of non-reciprocal">
    
    
   
-   
   @keyframes fadeInUpCard {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -312,13 +311,10 @@ Introduced the fundamentals of non-reciprocal">
     display: flex;
     flex-wrap: wrap; 
     align-items: center;
-    
-     
     opacity: 0; 
     animation: fadeInUpCard 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
   }
 
-   
   body.pub-mode main .row:hover,
   body.pub-mode main > div > div:hover {
     transform: translateY(-5px);
@@ -326,7 +322,6 @@ Introduced the fundamentals of non-reciprocal">
     border-left: 4px solid var(--link-color) !important;
   }
 
-   
   body.pub-mode img {
     border-radius: 6px;
     transition: transform 0.4s ease;
@@ -336,7 +331,6 @@ Introduced the fundamentals of non-reciprocal">
     transform: scale(1.02);
   }
 
-   
   body.pub-mode .row a[href]:not(:first-child),
   body.pub-mode main > div > div a[href]:not(:first-child) {
     display: inline-block;
@@ -352,23 +346,6 @@ Introduced the fundamentals of non-reciprocal">
     text-decoration: none !important;
     border: 1px solid transparent;
   }
-
-   
-  body.pub-mode .row a[href*="paper"]::before,
-  body.pub-mode .row a[href*="arxiv"]::before,
-  body.pub-mode .row a[href*="pdf"]::before,
-  body.pub-mode main > div > div a[href*="paper"]::before,
-  body.pub-mode main > div > div a[href*="arxiv"]::before,
-  body.pub-mode main > div > div a[href*="pdf"]::before {
-    content: "📄 ";
-  }
-  
-  body.pub-mode .row a[href*="project"]::before,
-  body.pub-mode .row a[href*="code"]::before,
-  body.pub-mode main > div > div a[href*="project"]::before,
-  body.pub-mode main > div > div a[href*="code"]::before {
-    content: "🔗 ";
-  }
   
   body.pub-mode .row a[href]:not(:first-child):hover,
   body.pub-mode main > div > div a[href]:not(:first-child):hover {
@@ -378,76 +355,44 @@ Introduced the fundamentals of non-reciprocal">
   }
 
    
-  body.pub-mode em {
-    display: block;
-    margin-top: 5px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 0.9rem;
-    color: var(--text-color);
-    opacity: 0.8;
-  }
-  body.pub-mode h2 a, body.pub-mode h3 a, body.pub-mode h4 a {
-    background: transparent !important;
-    padding: 0 !important;
-    border: none !important;
-    font-size: 1.1rem;
-    font-weight: 700;
-    box-shadow: none !important;
-  }
-
-
-   
    
    
   
    
-  body.exp-mode main > div > div, 
-  body.exp-mode .entry-content > div,
-  body.exp-mode .post-content > div {
+  .experience-pop-item {
+    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+    
      
+    border-left: 4px solid transparent !important;
+    padding-left: 10px !important;
+    margin-left: -14px !important;  
+    
+    border-radius: 0 12px 12px 0 !important;
     background: transparent !important;
-    backdrop-filter: none !important;
-    box-shadow: none !important;
-    border: none !important;
-    
-     
-    border-left: 3px solid transparent !important; 
-    padding-left: 15px;
-    margin-bottom: 30px;
-    border-radius: 0 10px 10px 0;
-    
-    transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
-    
-     
-    opacity: 0; 
-    animation: fadeInUpCard 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
   }
 
    
-  body.exp-mode main > div > div:hover,
-  body.exp-mode .entry-content > div:hover,
-  body.exp-mode .post-content > div:hover {
+  .experience-pop-item:hover {
      
     border-left-color: var(--link-color) !important;
+    
      
-    transform: translateX(10px);
+    transform: translateX(10px) !important;
+    
      
     background: linear-gradient(to right, rgba(0, 119, 181, 0.05), transparent) !important;
   }
 
    
-  body.exp-mode img {
-    border-radius: 12px !important; 
+  .experience-pop-item img {
+    transition: transform 0.3s ease !important;
+    border-radius: 12px !important;
     background: transparent !important;
     box-shadow: none !important;
-    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
   
-  body.exp-mode main > div > div:hover img,
-  body.exp-mode .entry-content > div:hover img {
+  .experience-pop-item:hover img {
     transform: scale(1.1);  
-    filter: drop-shadow(0 8px 12px rgba(0,0,0,0.15));
   }
 
 
@@ -488,7 +433,8 @@ Introduced the fundamentals of non-reciprocal">
 </button>
 
 <script>
-  (function() {
+  document.addEventListener('DOMContentLoaded', function() {
+    
     const toggleBtn = document.getElementById('theme-toggle');
     const htmlEl = document.documentElement;
     const icon = toggleBtn.querySelector('i');
@@ -497,16 +443,32 @@ Introduced the fundamentals of non-reciprocal">
     
     if (href.indexOf("experience") > -1) {
         document.body.classList.add("exp-mode");
+        
+        
+        
+        const expImages = document.querySelectorAll('main img');
+        expImages.forEach(img => {
+            
+            const container = img.parentElement;
+            
+            
+            if (container.tagName !== 'MAIN') {
+                container.classList.add('experience-pop-item');
+                
+                
+                container.style.opacity = '0';
+                container.style.animation = 'fadeInUpCard 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards';
+            }
+        });
     }
     else if (href.indexOf("publications") > -1) {
         document.body.classList.add("pub-mode");
     }
     
     
-    if (href.indexOf("experience") > -1 || href.indexOf("publications") > -1) {
+    if (href.indexOf("publications") > -1) {
         setTimeout(function() {
-            
-            const rows = document.querySelectorAll('main .row, main > div > div, .entry-content > div, .post-content > div');
+            const rows = document.querySelectorAll('main .row, main > div > div');
             rows.forEach((row, index) => {
                 row.style.animationDelay = (index * 0.15) + "s";
             });
@@ -532,7 +494,7 @@ Introduced the fundamentals of non-reciprocal">
         localStorage.setItem('theme', 'dark');
       }
     });
-  })();
+  });
 </script>
     <svg width="0" height="0" class="hidden">
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 699.428 699.428" id="copy">
