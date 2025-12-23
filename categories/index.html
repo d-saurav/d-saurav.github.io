@@ -181,7 +181,7 @@
 </footer>
 
 <div id="mobile-menu-overlay" class="mobile-menu-overlay">
-  </div>
+</div>
 
 <style>
    
@@ -189,7 +189,7 @@
     --link-color: #0077b5;
     --bg-color: #ffffff;
     --text-color: #333;
-    --menu-bg: rgba(255, 255, 255, 0.98);  
+    --menu-bg: rgba(255, 255, 255, 0.98);
     
      
     --glass-bg: rgba(255, 255, 255, 0.7);
@@ -214,6 +214,8 @@
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: color 0.3s ease;
+     
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
    
@@ -247,6 +249,11 @@
   @media screen and (max-width: 768px) {
     
      
+    body {
+        padding-top: 60px;
+    }
+
+     
     header ul, nav ul, .menu, .nav-links, .navigation ul {
         display: none !important;
     }
@@ -266,11 +273,10 @@
         position: absolute;
         right: 20px;
         top: 20px;
-        z-index: 20002;  
+        z-index: 20002;
         background: transparent;
     }
 
-     
     .mobile-menu-btn span {
         display: block;
         width: 20px;
@@ -280,7 +286,6 @@
         transition: all 0.3s ease;
     }
 
-     
     .mobile-menu-btn.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
     .mobile-menu-btn.active span:nth-child(2) { opacity: 0; }
     .mobile-menu-btn.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
@@ -292,21 +297,20 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 0;  
+        height: 0;
         background: var(--menu-bg);
         overflow: hidden;
         transition: height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        z-index: 20001;  
-        padding-top: 80px;  
+        z-index: 20001;
+        padding-top: 80px;
         text-align: center;
         backdrop-filter: blur(10px);
     }
 
     .mobile-menu-overlay.open {
-        height: 100vh;  
+        height: 100vh;
     }
 
-     
     .mobile-menu-overlay a {
         display: block;
         font-size: 1.2rem;
@@ -320,11 +324,30 @@
         transition: 0.3s ease;
     }
 
-     
     .mobile-menu-overlay.open a {
         opacity: 1;
         transform: translateY(0);
     }
+  }
+
+   
+   
+  .mobile-header-name {
+      display: none;  
+  }
+  @media screen and (max-width: 768px) {
+      .mobile-header-name {
+          display: block;
+          text-align: center;
+          margin-top: 10px;
+          margin-bottom: 20px;
+      }
+      .mobile-header-name h1 {
+          font-size: 2rem;
+          margin: 0;
+          font-weight: 700;
+          color: var(--text-color);
+      }
   }
 
    
@@ -399,20 +422,9 @@
   }
 
    
-   
-   
-  
-  @keyframes fadeInUpCard {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+  @keyframes fadeInUpCard { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
-   
-   
-   
-  
-  body.pub-mode main .row,
-  body.pub-mode main > div > div {
+  body.pub-mode main .row, body.pub-mode main > div > div {
     background: var(--glass-bg) !important;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -422,109 +434,30 @@
     padding: 25px;
     margin-bottom: 30px !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-wrap: wrap; 
-    align-items: center;
-    opacity: 0; 
+    display: flex; flex-wrap: wrap; align-items: center; opacity: 0; 
     animation: fadeInUpCard 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
   }
-
-  body.pub-mode main .row:hover,
-  body.pub-mode main > div > div:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.15) !important;
-    border-left: 4px solid var(--link-color) !important;
+  body.pub-mode main .row:hover, body.pub-mode main > div > div:hover {
+    transform: translateY(-5px); box-shadow: 0 12px 30px rgba(0,0,0,0.15) !important; border-left: 4px solid var(--link-color) !important;
+  }
+  body.pub-mode img { border-radius: 6px; transition: transform 0.4s ease; }
+  body.pub-mode .row:hover img, body.pub-mode main > div > div:hover img { transform: scale(1.02); }
+  body.pub-mode .row a[href]:not(:first-child), body.pub-mode main > div > div a[href]:not(:first-child) {
+    display: inline-block; margin-right: 10px; margin-top: 10px; padding: 6px 16px; border-radius: 50px; background-color: rgba(0, 119, 181, 0.08); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; text-decoration: none !important; border: 1px solid transparent;
+  }
+  body.pub-mode .row a[href]:not(:first-child):hover, body.pub-mode main > div > div a[href]:not(:first-child):hover {
+    background-color: var(--link-color); color: #fff !important;
   }
 
-  body.pub-mode img {
-    border-radius: 6px;
-    transition: transform 0.4s ease;
-  }
-  body.pub-mode .row:hover img,
-  body.pub-mode main > div > div:hover img {
-    transform: scale(1.02);
-  }
+  .experience-pop-item { transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) !important; border-left: 4px solid transparent !important; padding-left: 10px !important; margin-left: -14px !important; border-radius: 0 12px 12px 0 !important; background: transparent !important; }
+  .experience-pop-item:hover { border-left-color: var(--link-color) !important; transform: translateX(10px) !important; background: linear-gradient(to right, rgba(0, 119, 181, 0.05), transparent) !important; }
+  .experience-pop-item img { transition: transform 0.3s ease !important; border-radius: 12px !important; background: transparent !important; box-shadow: none !important; }
+  .experience-pop-item:hover img { transform: scale(1.1); }
 
-  body.pub-mode .row a[href]:not(:first-child),
-  body.pub-mode main > div > div a[href]:not(:first-child) {
-    display: inline-block;
-    margin-right: 10px;
-    margin-top: 10px;
-    padding: 6px 16px;
-    border-radius: 50px;
-    background-color: rgba(0, 119, 181, 0.08);
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    text-decoration: none !important;
-    border: 1px solid transparent;
-  }
-  
-  body.pub-mode .row a[href]:not(:first-child):hover,
-  body.pub-mode main > div > div a[href]:not(:first-child):hover {
-    background-color: var(--link-color);
-    color: #fff !important;
-  }
+  header a::before, nav a::before, .navigation a::before { content: none !important; display: none !important; }
 
-   
-   
-   
-  
-  .experience-pop-item {
-    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
-    border-left: 4px solid transparent !important;
-    padding-left: 10px !important;
-    margin-left: -14px !important; 
-    border-radius: 0 12px 12px 0 !important;
-    background: transparent !important;
-  }
-
-  .experience-pop-item:hover {
-    border-left-color: var(--link-color) !important;
-    transform: translateX(10px) !important;
-    background: linear-gradient(to right, rgba(0, 119, 181, 0.05), transparent) !important;
-  }
-
-  .experience-pop-item img {
-    transition: transform 0.3s ease !important;
-    border-radius: 12px !important;
-    background: transparent !important;
-    box-shadow: none !important;
-  }
-  
-  .experience-pop-item:hover img {
-    transform: scale(1.1);
-  }
-
-
-   
-   
-   
-  header a::before, nav a::before, .navigation a::before {
-    content: none !important;
-    display: none !important;
-  }
-
-   
   .theme-toggle-btn {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    z-index: 9999;
-    transition: transform 0.2s;
+    position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px; border-radius: 50%; background-color: #333; color: #fff; border: none; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.25); display: flex; align-items: center; justify-content: center; font-size: 22px; z-index: 9999; transition: transform 0.2s;
   }
   .theme-toggle-btn:hover { transform: scale(1.15); }
   body:not(.dark-mode) .theme-toggle-btn { background-color: #f0f0f0; color: #333; }
@@ -537,24 +470,17 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     
-    
     const header = document.querySelector('header') || document.querySelector('nav');
-    
     const originalLinks = document.querySelectorAll('header a, nav a');
     const overlay = document.getElementById('mobile-menu-overlay');
-    
     
     if (header) {
         const btn = document.createElement('div');
         btn.className = 'mobile-menu-btn';
         btn.innerHTML = '<span></span><span></span><span></span>';
-        
-        
         btn.addEventListener('click', function() {
-            this.classList.toggle('active'); 
-            overlay.classList.toggle('open'); 
-            
-            
+            this.classList.toggle('active');
+            overlay.classList.toggle('open');
             const mobileLinks = overlay.querySelectorAll('a');
             mobileLinks.forEach((link, idx) => {
                 if (overlay.classList.contains('open')) {
@@ -564,20 +490,15 @@
                 }
             });
         });
-        
         header.appendChild(btn);
     }
     
-    
     if (originalLinks.length > 0 && overlay) {
         originalLinks.forEach(link => {
-            
             if (link.innerText.trim().length > 0) {
                 const newLink = link.cloneNode(true);
-                
                 newLink.removeAttribute('class');
                 newLink.removeAttribute('id');
-                
                 newLink.addEventListener('click', () => {
                     document.querySelector('.mobile-menu-btn').click();
                 });
@@ -592,10 +513,8 @@
     const icon = toggleBtn.querySelector('i');
     const href = window.location.href.toLowerCase();
 
-    
     if (href.indexOf("experience") > -1) {
         document.body.classList.add("exp-mode");
-        
         const expImages = document.querySelectorAll('main img');
         expImages.forEach(img => {
             const container = img.parentElement;
@@ -616,7 +535,6 @@
         }, 100);
     }
 
-    
     if (htmlEl.classList.contains('dark-mode')) {
       document.body.classList.add('dark-mode'); 
       icon.classList.replace('fa-moon', 'fa-sun');
