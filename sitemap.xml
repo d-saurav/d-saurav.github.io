@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/publications/</loc>
+    <loc>https://d-saurav.github.io/publications/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/publications/hetero-euclid/</loc>
+    <loc>https://d-saurav.github.io/publications/hetero-euclid/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://d-saurav.github.io/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/publications/wave-propagation/</loc>
+    <loc>https://d-saurav.github.io/publications/wave-propagation/</loc>
     <lastmod>2025-07-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/publications/identification-of-critical-ground-motion/</loc>
+    <loc>https://d-saurav.github.io/publications/identification-of-critical-ground-motion/</loc>
     <lastmod>2025-07-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/publications/framework-for-ground-motions/</loc>
+    <loc>https://d-saurav.github.io/publications/framework-for-ground-motions/</loc>
     <lastmod>2024-12-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/experiences/</loc>
+    <loc>https://d-saurav.github.io/experiences/</loc>
   </url><url>
-    <loc>http://localhost:1313/talks/</loc>
+    <loc>https://d-saurav.github.io/talks/</loc>
   </url><url>
-    <loc>http://localhost:1313/courses/</loc>
+    <loc>https://d-saurav.github.io/courses/</loc>
   </url><url>
-    <loc>http://localhost:1313/blog/beyond-science/</loc>
+    <loc>https://d-saurav.github.io/blog/beyond-science/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://d-saurav.github.io/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/cv/</loc>
+    <loc>https://d-saurav.github.io/cv/</loc>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://d-saurav.github.io/blog/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://d-saurav.github.io/projects/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://d-saurav.github.io/tags/</loc>
   </url><url>
-    <loc>http://localhost:1313/blog/hobbies/</loc>
+    <loc>https://d-saurav.github.io/blog/hobbies/</loc>
   </url>
 </urlset>
