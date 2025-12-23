@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Saurav Dutta</title>
-    <link>https://d-saurav.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Saurav Dutta</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://d-saurav.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hetero-EUCLID: Interpretable model discovery for heterogeneous hyperelastic materials using stress-free unsupervised learning</title>
-      <link>https://d-saurav.github.io/publications/hetero-euclid/</link>
+      <link>http://localhost:1313/publications/hetero-euclid/</link>
       <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://d-saurav.github.io/publications/hetero-euclid/</guid>
+      <guid>http://localhost:1313/publications/hetero-euclid/</guid>
       <description>🧠 Unsupervised model discovery without stress input — interpretable and automatic.</description>
     </item>
     <item>
       <title>Wave propagation in an elastic lattice with non-reciprocal stiffness and engineered damping</title>
-      <link>https://d-saurav.github.io/publications/wave-propagation/</link>
+      <link>http://localhost:1313/publications/wave-propagation/</link>
       <pubDate>Thu, 31 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://d-saurav.github.io/publications/wave-propagation/</guid>
+      <guid>http://localhost:1313/publications/wave-propagation/</guid>
       <description>🔁 Non-reciprocity tunes the wave&amp;rsquo;s group velocity, frequency and amplification rate</description>
     </item>
     <item>
       <title>Identification of critical ground motion features for seismic fragility studies considering soil-structure interaction</title>
-      <link>https://d-saurav.github.io/publications/identification-of-critical-ground-motion/</link>
+      <link>http://localhost:1313/publications/identification-of-critical-ground-motion/</link>
       <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://d-saurav.github.io/publications/identification-of-critical-ground-motion/</guid>
+      <guid>http://localhost:1313/publications/identification-of-critical-ground-motion/</guid>
       <description>&lt;p&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA; &#xD;&#xA;&#xD;&#xA;&lt;style&gt;&#xD;&#xA;figcaption::before {&#xD;&#xA;  content: &#34;Fig. &#34; counter(figcounter) &#34;.\00a0&#34;;&#xD;&#xA;  counter-increment: figcounter;&#xD;&#xA;}&#xD;&#xA;&lt;/style&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;h1&gt;Identification of critical ground motion features for seismic fragility studies considering soil-structure interaction&lt;/h1&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;h5 style=&#34;margin-top: 0;&#34;&gt;&lt;a href=https://link.springer.com/journal/42417&gt;&lt;/a&gt;Journal of Vibration Engineering and Technologies&lt;/a&gt;&lt;/h5&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;authors header-font&#34;&gt;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&lt;div class=&#34;author-info&#34;&gt;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;a class=&#34;author-name&#34; href=&#34;&#34; &gt;Srishti Singh&lt;/a&gt;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;div class=&#34;author-affliation&#34;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;a class=&#34;author-affiliation-name&#34; href=&#34;https://iitbhu.ac.in/&#34;&gt;Indian Institute of Technology BHU, Varanasi&lt;/a&gt;&lt;span style=&#34;font-size: 90%;&#34;&gt; and &lt;/span&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;a class=&#34;author-affiliation-name&#34; href=&#34;&#34;&gt;National Institute of Technology, Jamshedpur, India&lt;/a&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&lt;/div&gt;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&lt;div class=&#34;author-info&#34;&gt;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;a class=&#34;author-name&#34; href=&#34;&#34; &gt;Manish Kumar&lt;/a&gt;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;div class=&#34;author-affliation&#34;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;a class=&#34;author-affiliation-name&#34; href=&#34;https://iitbhu.ac.in/&#34;&gt;Indian Institute of Technology BHU, Varanasi&lt;/a&gt;&lt;span style=&#34;font-size: 90%;&#34;&gt; and &lt;/span&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;a class=&#34;author-affiliation-name&#34; href=&#34;&#34;&gt;Jamia Milia Islamia, New Delhi, India&lt;/a&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&lt;/div&gt;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&lt;div class=&#34;author-info&#34;&gt;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;a class=&#34;author-name&#34; href=&#34; https://d-saurav.github.io &#34; &gt;Saurav Dutta&lt;/a&gt;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;div class=&#34;author-affliation&#34;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;a class=&#34;author-affiliation-name&#34; href=&#34;https://iitbhu.ac.in/&#34;&gt;Indian Institute of Technology BHU, Varanasi&lt;/a&gt;&lt;span style=&#34;font-size: 90%;&#34;&gt; and &lt;/span&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;a class=&#34;author-affiliation-name&#34; href=&#34;https://nits.ac.in/&#34;&gt;National Institute of Technology, Silchar. India&lt;/a&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&lt;/div&gt;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&lt;div class=&#34;author-info&#34;&gt;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;a class=&#34;author-name&#34; href=&#34; https://iitbhu.ac.in/dept/civ/people/anandciv &#34; &gt;Vishwajit Anand&lt;/a&gt;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;div class=&#34;author-affliation&#34;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;a class=&#34;author-affiliation-name&#34; href=&#34;https://iitbhu.ac.in/&#34;&gt;Indian Institute of Technology BHU, Varanasi&lt;/a&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&lt;/div&gt;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;&lt;div class=&#34;author-notes pale&#34;&gt;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;&lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Framework for Ground Motion Characterization</title>
-      <link>https://d-saurav.github.io/publications/framework-for-ground-motions/</link>
+      <link>http://localhost:1313/publications/framework-for-ground-motions/</link>
       <pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://d-saurav.github.io/publications/framework-for-ground-motions/</guid>
+      <guid>http://localhost:1313/publications/framework-for-ground-motions/</guid>
       <description>&lt;p&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA; &#xD;&#xA;&#xD;&#xA;&lt;style&gt;&#xD;&#xA;figcaption::before {&#xD;&#xA;  content: &#34;Fig. &#34; counter(figcounter) &#34;.\00a0&#34;;&#xD;&#xA;  counter-increment: figcounter;&#xD;&#xA;}&#xD;&#xA;&lt;/style&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;h1&gt;Framework for Ground Motion Characterization&lt;/h1&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;h5 style=&#34;margin-top: 0;&#34;&gt;&lt;a href=ZgotmplZ&gt;&lt;/a&gt;In Seismic Hazard Analyses, Wave Propagation and Site Characterization, Springer Nature Singapore, pp. 355–366&lt;/a&gt;&lt;/h5&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;authors header-font&#34;&gt;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&lt;div class=&#34;author-info&#34;&gt;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;a class=&#34;author-name&#34; href=&#34; https://d-saurav.github.io &#34; &gt;Saurav Dutta*&lt;/a&gt;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;div class=&#34;author-affliation&#34;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;a class=&#34;author-affiliation-name&#34; href=&#34;https://iitbhu.ac.in/&#34;&gt;Indian Institute of Technology BHU, Varanasi&lt;/a&gt;&lt;span style=&#34;font-size: 90%;&#34;&gt; and &lt;/span&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;a class=&#34;author-affiliation-name&#34; href=&#34;https://nits.ac.in/&#34;&gt;National Institute of Technology, Silchar, India&lt;/a&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&lt;/div&gt;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&lt;div class=&#34;author-info&#34;&gt;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;a class=&#34;author-name&#34; href=&#34; https://iitbhu.ac.in/dept/civ/people/anandciv &#34; &gt;Vishwajit Anand^&lt;/a&gt;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;div class=&#34;author-affliation&#34;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;a class=&#34;author-affiliation-name&#34; href=&#34;https://iitbhu.ac.in/&#34;&gt;Indian Institute of Technology BHU, Varanasi&lt;/a&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&lt;/div&gt;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;&lt;div class=&#34;author-notes pale&#34;&gt;&#xD;&#xA;&#x9;&lt;span&gt;*sole first author&lt;/span&gt;&#xD;&#xA;&#x9;&lt;span&gt;^corresponding author&lt;/span&gt;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;&lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://d-saurav.github.io/experiences/</link>
+      <link>http://localhost:1313/experiences/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://d-saurav.github.io/experiences/</guid>
+      <guid>http://localhost:1313/experiences/</guid>
       <description>&lt;h2 id=&#34;research-experience&#34;&gt;Research Experience&lt;/h2&gt;&#xA;&lt;div style=&#34;display: flex; gap: 20px; align-items: flex-start; margin-bottom: 50px;&#34;&gt;&#xD;&#xA;&lt;img src=&#34;vizuara.png&#34; alt=&#34;Vizuara AI Labs&#34; style=&#34;width: 100px; height: 100px; object-fit: contain; background: #fff; padding: 5px; border-radius: 12px;&#34;&gt;&#xD;&#xA;&lt;div style=&#34;flex: 1;&#34;&gt;&#xD;&#xA;&lt;div style=&#34;display: flex; justify-content: space-between; align-items: baseline;&#34;&gt;&#xD;&#xA;&lt;h3 style=&#34;margin: 0; font-size: 1.1rem; color: var(--text-color);&#34;&gt;Research Scientist&lt;/h3&gt;&#xD;&#xA;&lt;span style=&#34;font-size: 0.85rem; opacity: 0.6; font-weight: 600;&#34;&gt;Sept 2025 – Present&lt;/span&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;a href=&#34;https://home.vizuara.ai/&#34; style=&#34;font-weight: 600; color: var(--link-color);&#34;&gt;Vizuara AI Labs&lt;/a&gt;&#xD;&#xA;&lt;div style=&#34;font-size: 0.9em; opacity: 0.8; margin-bottom: 8px;&#34;&gt;Principal Investigator: Dr. Sreedath Panat (MIT PhD)&lt;/div&gt;&#xD;&#xA;&lt;p style=&#34;margin-top: 5px; font-size: 0.95rem; line-height: 1.6;&#34;&gt;&#xD;&#xA;Developing scalable learning frameworks for forward and inverse problems in complex physical systems. My work focuses on coupling data-driven models with governing physical laws at the intersection of &lt;strong&gt;Scientific Machine Learning (SciML)&lt;/strong&gt; and computational mechanics.&#xD;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Beyond Science: The Novel ✍️</title>
-      <link>https://d-saurav.github.io/blog/beyond-science/</link>
+      <link>http://localhost:1313/blog/beyond-science/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://d-saurav.github.io/blog/beyond-science/</guid>
+      <guid>http://localhost:1313/blog/beyond-science/</guid>
       <description>&lt;p&gt;&lt;strong&gt;The human experience cannot be fully captured by equations.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;While engineering and research form the bedrock of my career, I have always believed that a person is not defined solely by their profession. True fulfillment lies in the duality of the analytical and the artistic, understanding the world through physics, and understanding oneself through narrative.&lt;/p&gt;&#xA;&lt;p&gt;To that end, I am currently drafting my first novel. It is a work of fiction that blends memory with imagination, exploring the delicate tension between transformation and loss.&lt;/p&gt;</description>
     </item>
     <item>
       <title>CV</title>
-      <link>https://d-saurav.github.io/cv/</link>
+      <link>http://localhost:1313/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://d-saurav.github.io/cv/</guid>
-      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://d-saurav.github.io/files/CV.pdf&#34;&gt;Click here for my full academic CV&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;!-- - [Click here for my 1 page CV (non-academic, coding focused)](/files/Resume.pdf) --&gt;</description>
+      <guid>http://localhost:1313/cv/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/files/CV.pdf&#34;&gt;Click here for my full academic CV&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;!-- - [Click here for my 1 page CV (non-academic, coding focused)](/files/Resume.pdf) --&gt;</description>
     </item>
     <item>
       <title>The Abstract &amp; The Analog 🎨</title>
-      <link>https://d-saurav.github.io/blog/hobbies/</link>
+      <link>http://localhost:1313/blog/hobbies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://d-saurav.github.io/blog/hobbies/</guid>
+      <guid>http://localhost:1313/blog/hobbies/</guid>
       <description>&lt;p&gt;When I step away from the rigors of engineering, I seek clarity in the abstract.&lt;/p&gt;&#xA;&lt;p&gt;You will often find me engaging in dialectics on cosmology and orbital mechanics with fellow aerospace minds, or navigating the strategic complexities of the chessboard. It is a discipline of foresight and patience, a quiet war on 64 squares where I am perpetually refining my command of the game.&lt;/p&gt;&#xA;&lt;p&gt;Musically, I find resonance in the melancholic. Whenever I am near a guitar, I instinctively return to the fretboard to test the endurance of muscle memory against a three-year hiatus. It is a tactile, analog escape, a necessary counterbalance to a life defined by scientific precision.&lt;/p&gt;</description>
     </item>
   </channel>

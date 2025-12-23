@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Perspectives &amp; Pursuits on Saurav Dutta</title>
-    <link>https://d-saurav.github.io/blog/</link>
+    <link>http://localhost:1313/blog/</link>
     <description>Recent content in Perspectives &amp; Pursuits on Saurav Dutta</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://d-saurav.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Beyond Science: The Novel ✍️</title>
-      <link>https://d-saurav.github.io/blog/beyond-science/</link>
+      <link>http://localhost:1313/blog/beyond-science/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://d-saurav.github.io/blog/beyond-science/</guid>
+      <guid>http://localhost:1313/blog/beyond-science/</guid>
       <description>&lt;p&gt;&lt;strong&gt;The human experience cannot be fully captured by equations.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;While engineering and research form the bedrock of my career, I have always believed that a person is not defined solely by their profession. True fulfillment lies in the duality of the analytical and the artistic, understanding the world through physics, and understanding oneself through narrative.&lt;/p&gt;&#xA;&lt;p&gt;To that end, I am currently drafting my first novel. It is a work of fiction that blends memory with imagination, exploring the delicate tension between transformation and loss.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Abstract &amp; The Analog 🎨</title>
-      <link>https://d-saurav.github.io/blog/hobbies/</link>
+      <link>http://localhost:1313/blog/hobbies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://d-saurav.github.io/blog/hobbies/</guid>
+      <guid>http://localhost:1313/blog/hobbies/</guid>
       <description>&lt;p&gt;When I step away from the rigors of engineering, I seek clarity in the abstract.&lt;/p&gt;&#xA;&lt;p&gt;You will often find me engaging in dialectics on cosmology and orbital mechanics with fellow aerospace minds, or navigating the strategic complexities of the chessboard. It is a discipline of foresight and patience, a quiet war on 64 squares where I am perpetually refining my command of the game.&lt;/p&gt;&#xA;&lt;p&gt;Musically, I find resonance in the melancholic. Whenever I am near a guitar, I instinctively return to the fretboard to test the endurance of muscle memory against a three-year hiatus. It is a tactile, analog escape, a necessary counterbalance to a life defined by scientific precision.&lt;/p&gt;</description>
     </item>
   </channel>
