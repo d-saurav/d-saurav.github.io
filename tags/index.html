@@ -171,19 +171,7 @@
 
   </div>
     </main>
-    <footer class="footer pale header-font" style="margin-top: 60px; padding-bottom: 30px; text-align: center;">
-  <p class="attribution upcase" style="font-size: 0.9rem; margin-bottom: 5px;">
-    Saurav Dutta
-  </p>
-  <p class="attribution upcase" style="font-size: 0.8rem; opacity: 0.7;">
-    © 2025 Saurav Dutta
-  </p>
-</footer>
-
-<div id="mobile-menu-overlay" class="mobile-menu-overlay">
-</div>
-
-<style>
+    <style>
    
   :root {
     --link-color: #0077b5;
@@ -215,7 +203,6 @@
     color: var(--text-color);
     transition: color 0.3s ease;
      
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
    
@@ -241,7 +228,6 @@
    
    
   
-   
   .mobile-menu-btn { display: none; }
   .mobile-menu-overlay { display: none; }
 
@@ -331,18 +317,18 @@
   }
 
    
-   
   .mobile-header-name {
       display: none;  
   }
   @media screen and (max-width: 768px) {
       .mobile-header-name {
-          display: block;
+          display: block;  
           text-align: center;
           margin-top: 10px;
           margin-bottom: 20px;
       }
       .mobile-header-name h1 {
+           
           font-size: 2rem;
           margin: 0;
           font-weight: 700;
@@ -470,6 +456,20 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     
+    
+    
+    const path = window.location.pathname;
+    const nameContainer = document.querySelector('.mobile-header-name');
+    
+    
+    const isHomePage = path === '/' || path === '/index.html' || (path.split('/').filter(Boolean).length === 0);
+    
+    if (!isHomePage && nameContainer) {
+        
+        nameContainer.style.display = 'none';
+    }
+
+    
     const header = document.querySelector('header') || document.querySelector('nav');
     const originalLinks = document.querySelectorAll('header a, nav a');
     const overlay = document.getElementById('mobile-menu-overlay');
@@ -493,9 +493,12 @@
         header.appendChild(btn);
     }
     
+    
     if (originalLinks.length > 0 && overlay) {
         originalLinks.forEach(link => {
-            if (link.innerText.trim().length > 0) {
+            const text = link.innerText.trim();
+            
+            if (text.length > 0 && text.toLowerCase() !== 'saurav dutta') {
                 const newLink = link.cloneNode(true);
                 newLink.removeAttribute('class');
                 newLink.removeAttribute('id');
