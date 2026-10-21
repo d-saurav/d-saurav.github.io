@@ -25,7 +25,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
   
-<link rel="stylesheet" href="https://d-saurav.github.io/css/site.min.3a3ede0fffe526b26810f742f41cd16d8ab8c4af333206acedf86477ad27b4a24e80cdf90e1f28a3672911b3b2b9a88b8c8d8a4b3f6f9c6f477803281fe62279.css" integrity="sha512-Oj7eD//lJrJoEPdC9BzRbYq4xK8zMgas7fhkd60ntKJOgM35Dh8oo2cpEbOyuaiLjI2KSz9vnG9HeAMoH&#43;YieQ==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://d-saurav.github.io/css/site.min.cbbd15478a8cce211b1a0d2b97ba5db22df5db0d85db433c806e80d3a841f1469f997b4b655772858aa0cbfe4b912b58c8a0d1a63e0c017d6db7001ba8ce7428.css" integrity="sha512-y70VR4qMziEbGg0rl7pdsi312w2F20M8gG6A06hB8UafmXtLZVdyhYqgy/5LkStYyKDRpj4MAX1ttwAbqM50KA==" crossorigin="anonymous">
 
   <link rel="icon" href="https://d-saurav.github.io/icon.png" type="image/png">
 
@@ -170,40 +170,43 @@
     <span class="jr-role">PhD Candidate</span><span class="jr-dates">Since Sep 2026</span>
   </a></li>
   </ol>
-  <button type="button" class="jr-replay" aria-label="Replay the animation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4.5h4.5"/></svg></button>
   <script>
   (function (fig) {
     if (!fig || fig.dataset.ready) return; fig.dataset.ready = '1';
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-     
-    var seq = [];
-    fig.querySelectorAll('.jr-track > li').forEach(function (li) { seq.push(li); });
-    var timers = [];
+    var seq = [].slice.call(fig.querySelectorAll('.jr-track > li'));    
     var track = fig.querySelector('.jr-track');
-    function follow(el) {
-      if (track.scrollWidth <= track.clientWidth + 2) return;           
-      var target = el.offsetLeft + el.offsetWidth / 2 - track.clientWidth / 2;
-      track.scrollTo({ left: Math.max(0, target), behavior: 'smooth' });
+    var HOLD = 2600;                  
+    var timers = [], inView = false, waiting = false;
+    function follow(el) {            
+      if (track.scrollWidth <= track.clientWidth + 2) return;
+      track.scrollTo({ left: Math.max(0, el.offsetLeft + el.offsetWidth / 2 - track.clientWidth / 2), behavior: 'smooth' });
     }
     function clear() { timers.forEach(clearTimeout); timers = []; }
     function reset() { seq.forEach(function (el) { el.classList.remove('is-on'); }); fig.classList.remove('is-done'); }
     function play() {
-      clear(); reset(); track.scrollTo({ left: 0 });
-      var t = 150;
+      clear(); waiting = false;
+      if (!inView || document.hidden) { waiting = true; return; }       
+      reset(); track.scrollTo({ left: 0 });
+      var t = 450;
       seq.forEach(function (el) {
-        var isArrow = el.classList.contains('jr-arrow');
         timers.push(setTimeout(function () { el.classList.add('is-on'); follow(el); }, t));
-        t += isArrow ? 520 : 680;
+        t += el.classList.contains('jr-arrow') ? 520 : 680;
       });
       timers.push(setTimeout(function () { fig.classList.add('is-done'); }, t));
+      timers.push(setTimeout(play, t + HOLD));                           
     }
-    fig.querySelector('.jr-replay').addEventListener('click', play);
     if (reduce) { seq.forEach(function (el) { el.classList.add('is-on'); }); fig.classList.add('is-done', 'is-static'); return; }
     fig.classList.add('is-ready');
+    function wake() { if (waiting && inView && !document.hidden) play(); }
+    document.addEventListener('visibilitychange', wake);
     if ('IntersectionObserver' in window) {
-      var io = new IntersectionObserver(function (es) { if (es[0].isIntersecting) { play(); io.disconnect(); } }, { threshold: 0.45 });
-      io.observe(fig);
-    } else { play(); }
+      var first = true;
+      new IntersectionObserver(function (es) {
+        inView = es[0].isIntersecting;
+        if (inView && first) { first = false; play(); } else wake();
+      }, { threshold: 0.3 }).observe(fig);
+    } else { inView = true; play(); }
   })(document.currentScript && document.currentScript.parentElement);
   </script>
 </figure>
