@@ -24,7 +24,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
   
-<link rel="stylesheet" href="https://d-saurav.github.io/css/site.min.64ffd288c0ac3798515d266e432c95af159d6c99f748c5b624d73c8eea3b7e1dd362cfa63921affe272ef359d794b6e7573370f5384efbc2e0267e4aa96aa0a3.css" integrity="sha512-ZP/SiMCsN5hRXSZuQyyVrxWdbJn3SMW2JNc8juo7fh3TYs&#43;mOSGv/icu81nXlLbnVzNw9ThO&#43;8LgJn5KqWqgow==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://d-saurav.github.io/css/site.min.462d5663dc347881f8f7763c90d87cb61db027af266a5c7488caac1d1e3b0f133e45bc4c58b2f88cbce2e18b674379501bdf91bcae5d06854f467388f662b738.css" integrity="sha512-Ri1WY9w0eIH493Y8kNh8th2wJ68malx0iMqsHR47DxM&#43;RbxMWLL4jLzi4YtnQ3lQG9&#43;RvK5dBoVPRnOI9mK3OA==" crossorigin="anonymous">
 
   <link rel="icon" href="https://d-saurav.github.io/icon.png" type="image/png">
 
@@ -232,6 +232,199 @@ figcaption::before {
 <p style="margin-top: 1em;"><em>🧠 Unsupervised model discovery without stress input — interpretable and automatic.</em></p>
 
 </p>
+
+<div class="flow is-all" data-steps='[{&#34;label&#34;:&#34;(a) Unknown heterogeneous specimen&#34;,&#34;r&#34;:[0,0,192,212]},{&#34;arrow&#34;:&#34;M192 92 L238 92&#34;,&#34;label&#34;:&#34;(b) Displacement data&#34;,&#34;r&#34;:[240,0,398,190]},{&#34;arrow&#34;:&#34;M404 92 L448 92&#34;,&#34;label&#34;:&#34;(c) Mesh nodal points (wedge-type element)&#34;,&#34;r&#34;:[450,0,618,200]},{&#34;arrow&#34;:&#34;M620 86 L650 86&#34;,&#34;label&#34;:&#34;(d) Displacement fields&#34;,&#34;r&#34;:[648,0,962,182]},{&#34;arrow&#34;:&#34;M732 152 L732 208&#34;,&#34;label&#34;:&#34;(e) Strain fields&#34;,&#34;r&#34;:[640,212,962,392]},{&#34;arrow&#34;:&#34;M638 288 L582 288&#34;,&#34;label&#34;:&#34;(f) Material model library&#34;,&#34;r&#34;:[388,240,578,362]},{&#34;arrow&#34;:&#34;M382 288 L322 288&#34;,&#34;label&#34;:&#34;(g) Homogenized model — linear momentum conservation&#34;,&#34;r&#34;:[6,238,320,548]},{&#34;arrow&#34;:&#34;M322 436 L394 436&#34;,&#34;label&#34;:&#34;(i) Residual force field distribution&#34;,&#34;r&#34;:[392,392,560,566]},{&#34;also&#34;:[[140,578,470,606]],&#34;arrow&#34;:&#34;M398 486 C 372 488, 356 498, 356 522 L 356 574&#34;,&#34;label&#34;:&#34;(h) Random seed-based growth — interface flagged nodes&#34;,&#34;r&#34;:[14,604,186,784]},{&#34;arrow&#34;:&#34;M186 693 L222 693&#34;,&#34;label&#34;:&#34;(h) Random seed-based growth — material cluster growth&#34;,&#34;r&#34;:[222,604,386,784]},{&#34;also&#34;:[[6,578,606,792]],&#34;arrow&#34;:&#34;M384 693 L420 693&#34;,&#34;label&#34;:&#34;(h) Random seed-based growth — fully identified regions&#34;,&#34;r&#34;:[418,600,604,784]},{&#34;arrow&#34;:&#34;M572 598 L572 512 Q572 496 588 496 L634 496&#34;,&#34;label&#34;:&#34;(j) Heterogenized model — spike-slab prior Bayesian framework&#34;,&#34;r&#34;:[640,404,962,610]},{&#34;arrow&#34;:&#34;M808 608 L808 630&#34;,&#34;label&#34;:&#34;(k) Region-wise interpretable material model&#34;,&#34;r&#34;:[640,628,962,792]}]' role="group" aria-label="Animated figure: Hetero-EUCLID pipeline: from displacement data of an unknown heterogeneous specimen to region-wise interpretable material models.">
+  <div class="flow-stage" style="aspect-ratio: 962 / 792; --ar: 1.2146464646464648">
+    <img src="https://d-saurav.github.io/publications/hetero.jpg" alt="Hetero-EUCLID pipeline: from displacement data of an unknown heterogeneous specimen to region-wise interpretable material models." width="962" height="792">
+    <svg class="flow-svg" viewBox="0 0 962 792" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <filter class="flow-f-soft" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="5"/></filter>
+        <mask class="flow-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="962" height="792">
+          <rect x="0" y="0" width="962" height="792" fill="#fff"/>
+          <g class="flow-holes"></g>
+        </mask>
+      </defs>
+      <rect class="flow-wash" x="0" y="0" width="962" height="792"/>
+      <rect class="flow-ring" x="0" y="0" width="962" height="792" rx="10"/>
+      <path class="flow-trail" d="M0 0"/>
+      <circle class="flow-dot" r="5" cx="-50" cy="-50"/>
+    </svg>
+  </div>
+  <div class="flow-bar">
+    <div class="flow-controls">
+      <button type="button" class="flow-btn flow-prev" aria-label="Previous step"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+      <button type="button" class="flow-btn flow-play" aria-label="Pause"><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6v12M15 6v12"/></svg><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></button>
+      <button type="button" class="flow-btn flow-next" aria-label="Next step"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+    </div>
+    <p class="flow-label" aria-live="off"><span class="flow-count"></span> <span class="flow-text"></span></p>
+    <div class="flow-dots" role="group" aria-label="Jump to step"></div>
+  </div>
+  <script>
+  (function (fig) {
+    if (!fig || fig.dataset.ready) return;
+    fig.dataset.ready = "1";
+    var uid = 'flow' + (window.__flowN = (window.__flowN || 0) + 1);
+    var compact = fig.classList.contains('flow--compact');
+    var steps = JSON.parse(fig.getAttribute('data-steps'));
+    var q = function (s) { return fig.querySelector(s); };
+    var svg = q('.flow-svg'), vb = svg.viewBox.baseVal;
+    var holes = q('.flow-holes'), ring = q('.flow-ring'), trail = q('.flow-trail'), dot = q('.flow-dot'), wash = q('.flow-wash');
+
+     
+    q('.flow-f-soft').id = uid + '-soft';
+    q('.flow-mask').id = uid + '-mask';
+    holes.setAttribute('filter', 'url(#' + uid + '-soft)');
+    wash.setAttribute('mask', 'url(#' + uid + '-mask)');
+
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var T = compact ? { hold: 450, travel: 380, move: 280, whole: 1800 }
+                    : { hold: 750, travel: 480, move: 340, whole: 2500 };
+    var PX = compact ? { ring: 2, trail: 3, dot: 2.5 } : { ring: 3, trail: 5, dot: 5 };
+    var PAD = 4, cur = -1, playing = !reduce, timer = null, raf = null, box = null, inView = false;
+
+    function scale() { var w = svg.getBoundingClientRect().width; return w ? vb.width / w : 1; }
+    function sizeStrokes() {
+      var s = scale();
+      ring.style.strokeWidth = PX.ring * s; trail.style.strokeWidth = PX.trail * s; dot.setAttribute('r', PX.dot * s);
+      dot.style.strokeWidth = (compact ? 1.5 : 2.5) * s;
+    }
+    function whole() { return [2, 2, vb.width - 2, vb.height - 2]; }
+    function padded(r) { return [Math.max(2, r[0] - PAD), Math.max(2, r[1] - PAD), Math.min(vb.width - 2, r[2] + PAD), Math.min(vb.height - 2, r[3] + PAD)]; }
+    function setBox(b) {
+      box = b;
+      ring.setAttribute('x', b[0]); ring.setAttribute('y', b[1]);
+      ring.setAttribute('width', Math.max(0, b[2] - b[0])); ring.setAttribute('height', Math.max(0, b[3] - b[1]));
+    }
+     
+    var NS = 'http://www.w3.org/2000/svg';
+    var holeEls = steps.map(function (st) {
+      var g = document.createElementNS(NS, 'g');
+      g.setAttribute('class', 'flow-hole');
+      [st.r].concat(st.also || []).forEach(function (rr) {
+        var b = padded(rr), r = document.createElementNS(NS, 'rect');
+        r.setAttribute('x', b[0]); r.setAttribute('y', b[1]);
+        r.setAttribute('width', b[2] - b[0]); r.setAttribute('height', b[3] - b[1]);
+        r.setAttribute('rx', 10); r.setAttribute('fill', '#000');
+        g.appendChild(r);
+      });
+      if (st.arrow) {  
+        var a = document.createElementNS(NS, 'path');
+        a.setAttribute('d', st.arrow); a.setAttribute('fill', 'none'); a.setAttribute('stroke', '#000');
+        a.setAttribute('stroke-width', 30); a.setAttribute('stroke-linecap', 'round'); a.setAttribute('stroke-linejoin', 'round');
+        g.appendChild(a);
+      }
+      holes.appendChild(g);
+      return g;
+    });
+    function lightUpTo(i) { holeEls.forEach(function (h, j) { h.classList.toggle('is-lit', j <= i); }); }
+    function ease(t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
+    function cancel() { clearTimeout(timer); cancelAnimationFrame(raf); trail.style.opacity = 0; dot.style.opacity = 0; }
+
+    function moveTo(target, dur, done) {
+      var from = box.slice(), t0 = null;
+      if (reduce || dur <= 0) { setBox(target); if (done) done(); return; }
+      function tick(ts) {
+        if (t0 === null) t0 = ts;
+        var k = Math.min(1, (ts - t0) / dur), e = ease(k);
+        setBox(from.map(function (v, i) { return v + (target[i] - v) * e; }));
+        if (k < 1) raf = requestAnimationFrame(tick); else if (done) done();
+      }
+      raf = requestAnimationFrame(tick);
+    }
+    function travel(d, done) {
+      if (!d || reduce) { done(); return; }
+      sizeStrokes();
+      trail.setAttribute('d', d);
+      var L = trail.getTotalLength(), t0 = null, SEG = Math.min(40, L * .6);
+      trail.style.strokeDasharray = SEG + ' ' + (L + SEG);
+      trail.style.opacity = 1; dot.style.opacity = 1;
+      function tick(ts) {
+        if (t0 === null) t0 = ts;
+        var k = Math.min(1, (ts - t0) / T.travel), at = ease(k) * L;
+        trail.style.strokeDashoffset = -(at - SEG);
+        var p = trail.getPointAtLength(at);
+        dot.setAttribute('cx', p.x); dot.setAttribute('cy', p.y);
+        if (k < 1) raf = requestAnimationFrame(tick);
+        else { trail.style.opacity = 0; dot.style.opacity = 0; done(); }
+      }
+      raf = requestAnimationFrame(tick);
+    }
+
+     
+    var countEl = q('.flow-count'), textEl = q('.flow-text'), labelEl = q('.flow-label'), playBtn = q('.flow-play'), dotsEl = q('.flow-dots');
+    function label(i) {
+      if (!textEl) return;
+      if (i < 0) { countEl.textContent = 'Complete'; textEl.textContent = 'The full pipeline, (a) to (k)'; return; }
+      countEl.textContent = (i + 1) + ' / ' + steps.length;
+      textEl.textContent = steps[i].label;
+    }
+    function markDots(i) {
+      if (!dotsEl) return;
+      Array.prototype.forEach.call(dotsEl.children, function (b, j) {
+        b.classList.toggle('is-on', j === i || i < 0 && cur === -2);
+        b.classList.toggle('is-done', i < 0 ? cur === -2 : j < i);
+        b.setAttribute('aria-current', j === i ? 'step' : 'false');
+      });
+    }
+
+    function show(i, animate) {
+      cancel();
+      var prev = cur; cur = i;
+      var arrow = (animate && i === prev + 1) ? steps[i].arrow : null;
+      travel(arrow, function () {
+        label(i); markDots(i);
+        lightUpTo(i);
+        fig.classList.remove('is-all');
+        moveTo(padded(steps[i].r), animate ? T.move : 0, function () { if (playing) timer = setTimeout(advance, T.hold); });
+      });
+    }
+     
+    function showAll(animate) {
+      cancel(); cur = -2; label(-1); markDots(-1); lightUpTo(steps.length);
+      fig.classList.add('is-all');
+      moveTo(whole(), animate ? T.move : 0, function () { if (playing) timer = setTimeout(function () { cur = -1; lightUpTo(-1); show(0, true); }, T.whole); });
+    }
+    function advance() {
+      if (!inView || document.hidden) { timer = setTimeout(advance, 400); return; }
+      if (cur === steps.length - 1) showAll(true); else show(cur + 1, true);
+    }
+    function setPlaying(p) {
+      playing = p;
+      fig.classList.toggle('is-paused', !p);
+      if (playBtn) playBtn.setAttribute('aria-label', p ? 'Pause' : 'Play');
+      if (labelEl) labelEl.setAttribute('aria-live', p ? 'off' : 'polite');
+      clearTimeout(timer);
+      if (p) timer = setTimeout(advance, compact ? 600 : 900);
+    }
+
+    if (dotsEl) {
+      steps.forEach(function (s, i) {
+        var b = document.createElement('button');
+        b.type = 'button'; b.className = 'flow-dot-btn';
+        b.setAttribute('aria-label', 'Step ' + (i + 1) + ': ' + s.label);
+        b.addEventListener('click', function () { setPlaying(false); show(i, false); });
+        dotsEl.appendChild(b);
+      });
+      q('.flow-next').addEventListener('click', function () {
+        setPlaying(false);
+        if (cur === steps.length - 1) showAll(true); else show(cur < 0 ? 0 : cur + 1, true);
+      });
+      q('.flow-prev').addEventListener('click', function () { setPlaying(false); show(cur <= 0 ? 0 : cur - 1, false); });
+      playBtn.addEventListener('click', function () { setPlaying(!playing); });
+    }
+
+    setBox(whole()); sizeStrokes(); label(-1);
+    if (textEl) { countEl.textContent = ''; textEl.textContent = 'Full pipeline'; }
+    if ('ResizeObserver' in window) new ResizeObserver(sizeStrokes).observe(svg);
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (es) { inView = es[0].isIntersecting; }, { threshold: compact ? 0.6 : 0.35 }).observe(fig);
+    } else { inView = true; }
+    setPlaying(playing);
+  })(document.currentScript && document.currentScript.parentElement);
+  </script>
+</div>
+
+
 <p>In this work, we developed Hetero-EUCLID, an interpretable model discovery framework designed to identify material behavior in heterogeneous hyperelastic structures, without using stress data. Instead, it works solely with full-field displacement and boundary force data, mimicking real-world Digital Image Correlation (DIC) experiments.</p>
 <p>The method works in two stages:
 First, it locates material interfaces by analyzing where the internal force balance breaks down, using a clever combination of residual analysis and a random-seed-based clustering algorithm. This lets us segment the domain into regions of different material properties.
