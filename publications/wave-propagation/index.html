@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <title>
-      Wave propagation in an elastic lattice with non-reciprocal stiffness and engineered damping | Saurav Dutta
-  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wave propagation in an elastic lattice with non-reciprocal stiffness and engineered damping | Saurav Dutta</title>
+  <meta name="description" content=" 🔁 Non-reciprocity tunes the wave&#39;s group velocity, frequency and amplification rate">
+  <meta name="author" content="Saurav Dutta">
+  <link rel="canonical" href="https://d-saurav.github.io/publications/wave-propagation/">
 
-  <meta charset='utf-8'>
-  <meta name="viewport" content ="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <script>
+    (function () {
+      var saved = null;
+      try { saved = localStorage.getItem('theme'); } catch (e) {}
+      var systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (saved === 'dark' || (!saved && systemDark)) document.documentElement.classList.add('dark-mode');
+    })();
+  </script>
 
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://d-saurav.github.io/css/site.min.64ffd288c0ac3798515d266e432c95af159d6c99f748c5b624d73c8eea3b7e1dd362cfa63921affe272ef359d794b6e7573370f5384efbc2e0267e4aa96aa0a3.css" integrity="sha512-ZP/SiMCsN5hRXSZuQyyVrxWdbJn3SMW2JNc8juo7fh3TYs&#43;mOSGv/icu81nXlLbnVzNw9ThO&#43;8LgJn5KqWqgow==" crossorigin="anonymous">
+
   <link rel="icon" href="https://d-saurav.github.io/icon.png" type="image/png">
 
-
-
-
   
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Wave propagation in an elastic lattice with non-reciprocal stiffness and engineered damping | Saurav Dutta">
+  <meta property="og:description" content=" 🔁 Non-reciprocity tunes the wave&#39;s group velocity, frequency and amplification rate">
+  <meta property="og:url" content="https://d-saurav.github.io/publications/wave-propagation/">
+  <meta property="og:image" content="https://d-saurav.github.io/portrait_hu_4c33ae0053c18fd3.jpg">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="800">
+  <meta name="twitter:card" content="summary">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XFZRFJHCM1"></script>
 <script>
@@ -36,132 +50,54 @@
 
 
 
-
-
-<meta name="keywords" content="Saurav Dutta">
-<meta property="og:locale" content='en)_US'>
-<meta property="og:type" content="article">
-<meta property="og:title" content="Wave propagation in an elastic lattice with non-reciprocal stiffness and engineered damping">
-<meta property="og:description" content="🔁 Non-reciprocity tunes the wave&rsquo;s group velocity, frequency and amplification rate">
-<meta property="og:url" content="https://d-saurav.github.io/publications/wave-propagation/">
-<meta property="og:image" content="images/%!s(&lt;nil&gt;)">
-<link rel="canonical" href="https://d-saurav.github.io/publications/wave-propagation/"><link rel="apple-touch-icon" sizes="180x180" href='images/icons/apple-touch-icon.png'>
-<link rel="icon" type="image/png" sizes="32x32" href='images/icons/favicon-32x32.png'>
-<link rel="icon" type="image/png" sizes='16x16' href='images/icons/favicon-16x16.png'>
-<link rel="manifest" href='https://d-saurav.github.io/images/icons/site.webmanifest'>
-
-
-
-
-
-<link rel="stylesheet" href="https://d-saurav.github.io/css/styles.761e9b189b3e6fc0417efe70170eff7f73e0d06eaae7ecc730658cb87e8c209d1f40d04226fb0debf07dafed1f9eeab4a5df01213547a8b6bd03e175b0c74bfa.css" integrity="sha512-dh6bGJs&#43;b8BBfv5wFw7/f3Pg0G6q5&#43;zHMGWMuH6MIJ0fQNBCJvsN6/B9r&#43;0fnuq0pd8BITVHqLa9A&#43;F1sMdL&#43;g==" crossorigin="anonymous">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-
-  <style>
-     
-    html.dark-mode {
-      background-color: #121212 !important;
-    }
-    html.dark-mode body {
-      background-color: #121212 !important;
-      color: #e0e0e0 !important;
-    }
-  </style>
-  <script>
-    (function() {
-      const savedTheme = localStorage.getItem('theme');
-      const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      
-      if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
-        document.documentElement.classList.add('dark-mode');
-      }
-    })();
-  </script>
-  <meta property="og:image" content="https://d-saurav.github.io/teaser.jpg">
-  <meta property="og:image:width" content="800">
-  <meta property="og:image:height" content="800">
-  <meta property="og:title" content="Saurav Dutta - Research Scientist">
-  <meta property="og:description" content="Research Scientist at Vizuara AI Labs | GenAI & Materials">
-  <meta property="og:type" content="profile">
-  <meta name="author" content="Saurav Dutta">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Saurav Dutta",
-    "url": "https://d-saurav.github.io",
-    "image": "https://d-saurav.github.io/teaser.png",  
-    "jobTitle": "Research Scientist",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Vizuara AI Labs"
-    },
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "Indian Institute of Science (IISc)"
-    },
-    "description": "Research Scientist working on SciML, Neural ODEs, and Granular Mechanics.",
-    "sameAs": [
-      "https://github.com/d-saurav",
-      "https://linkedin.com/in/your-linkedin-id",
-      "https://scholar.google.com/citations?user=YOUR_USER_ID"
-    ]
-  }
-  </script>
 </head>
 
+  <body class="is-inner">
+    <a class="skip-link" href="#content">Skip to content</a>
+    <div class="shell">
+      
+<aside class="sidebar" aria-label="Profile">
+  <div class="sidebar-inner">
+    <a class="sb-id" href="https://d-saurav.github.io/" aria-label="Saurav Dutta — home">
+        <img class="sb-portrait" src="https://d-saurav.github.io/portrait_hu_bae3cc01f3ea9ef2.jpg" srcset="https://d-saurav.github.io/portrait_hu_36ce0d3a6adbfaf8.jpg 240w, https://d-saurav.github.io/portrait_hu_bae3cc01f3ea9ef2.jpg 480w" sizes="(max-width: 899px) 72px, 240px" width="240" height="185" alt="Portrait of Saurav Dutta">
+      <span class="sb-name-wrap">
+        <span class="sb-name">Saurav Dutta</span>
+        <span class="sb-role">PhD Candidate</span>
+      </span>
+    </a>
 
+    <p class="sb-affil">
+      IP Paris – École des Ponts ParisTech<br>
+      ERC AUTOMATIX · Paris, France
+    </p>
 
-
-
-
-  <body>
-    <main>
-      <div class="nav-drop">
-  <div class="nav-body">
-      <a href="https://d-saurav.github.io/" class="nav_item">Home</a>
-      <a href="https://d-saurav.github.io/publications" class="nav_item">Publications</a>
-      <a href="https://d-saurav.github.io/cv" class="nav_item">CV</a>
-      <a href="https://d-saurav.github.io/blog" class="nav_item">Blogs</a>
-    <div class="nav-close"></div>
-  </div>
-</div>
-<header class="nav">
-  <nav class="nav-menu">
-    <a href="https://d-saurav.github.io/" class="nav-brand">Saurav Dutta</a>
-    <ul class="nav-labels">
-      <li>
-        <a href="https://d-saurav.github.io/" class="nav_item">Home</a>
-      </li>
-      <li>
-        <a href="https://d-saurav.github.io/publications" class="nav_item">Publications</a>
-      </li>
-      <li>
-        <a href="https://d-saurav.github.io/cv" class="nav_item">CV</a>
-      </li>
-      <li>
-        <a href="https://d-saurav.github.io/blog" class="nav_item">Blogs</a>
-      </li>
+    <ul class="sb-links">
+      <li><a href="mailto:saurav.dutta@enpc.fr"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>saurav.dutta@enpc.fr</a></li>
+      <li><a href="https://scholar.google.com/citations?user=tIRikVIAAAAJ"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M2 9.5 12 4l10 5.5-10 5.5z"/><path d="M6 12v4.5c0 1.4 2.7 3 6 3s6-1.6 6-3V12"/></svg>Google Scholar</a></li>
+      <li><a href="https://www.linkedin.com/in/saurav-dutta-7aa931195"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>LinkedIn</a></li>
+      <li><a href="https://github.com/d-saurav"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 19c-4 1.3-4-2-6-2.5M15 21v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>GitHub</a></li>
+      <li><a href="https://d-saurav.github.io/files/CV.pdf"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg>Curriculum vitae (PDF)</a></li>
     </ul>
-    <p class="nav-byline pale"></p>
-    
-      
-    </div>
-  </nav>
-</header>
 
+    <nav class="sb-nav" aria-label="Main">
+        <a href="https://d-saurav.github.io/">Home</a>
+        <a href="https://d-saurav.github.io/publications/" class="is-active" aria-current="page">Publications</a>
+        <a href="https://d-saurav.github.io/blog/">Blog</a>
+    </nav>
 
-      
-  
-  <article class="post">
-    <div>
-      <div class="post_body" style="width: 100%;">
-        <div class="post_inner">
-          <p>
+    <button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false">
+      <svg class="icon-moon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg>
+      <svg class="icon-sun" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <span class="theme-toggle-label">Dark mode</span>
+    </button>
+  </div>
+</aside>
+
+      <main id="content" class="main">
+        
+  <article class="single">
+    <div class="prose pub-page">
+      <p>
 
 
 
@@ -275,342 +211,35 @@ figcaption::before {
 </p>
 <p>In this paper, we present a theoretical and numerical investigation of non-reciprocal dampers in one-dimensional elastic lattices, with a focus on dynamically controlling wave attenuation and energy dissipation. Our approach leverages asymmetric design principles and careful tuning of non-reciprocal parameters to achieve directional control of waves. We show that asymmetry in damping alone is sufficient to produce notable non-reciprocal behavior in both attenuation and group velocity. To provide a broader perspective, we also examine and compare the following configurations: (i) lattices with non-reciprocal springs, (ii) lattices with reciprocal springs coupled with non-reciprocal dampers, and (iii) lattices incorporating non-reciprocity in both springs and dampers.</p>
 
-        </div>
-      </div>
     </div>
+    <p class="back-link"><a href="https://d-saurav.github.io/publications/">← All publications</a></p>
   </article>
-  
 
-    </main>
-    <footer class="footer pale header-font" style="margin-top: 60px; padding-bottom: 30px; text-align: center;">
-  <p class="attribution upcase" style="font-size: 0.9rem; margin-bottom: 5px;">
-    Saurav Dutta
-  </p>
-  <p class="attribution upcase" style="font-size: 0.8rem; opacity: 0.7;">
-    © 2026 Saurav Dutta
-  </p>
+        <footer class="site-footer">
+  <p>© 2026 Saurav Dutta</p>
 </footer>
 
-<div id="mobile-menu-overlay" class="mobile-menu-overlay">
-</div>
-<style>
-   
-  :root {
-    --link-color: #0077b5;
-    --bg-color: #ffffff;
-    --text-color: #333;
-    --menu-bg: rgba(255, 255, 255, 0.98);
-    
-     
-    --glass-bg: rgba(255, 255, 255, 0.7);
-    --glass-border: rgba(0, 0, 0, 0.05);
-    --glass-shadow: rgba(0, 0, 0, 0.05);
-  }
-  
-  body.dark-mode {
-    --link-color: #64b5f6;
-    --bg-color: #121212;
-    --text-color: #e0e0e0;
-    --menu-bg: rgba(18, 18, 18, 0.98);
-    
-     
-    --glass-bg: rgba(30, 30, 30, 0.6);
-    --glass-border: rgba(255, 255, 255, 0.1);
-    --glass-shadow: rgba(0, 0, 0, 0.3);
-  }
-
-   
-  body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: color 0.3s ease;
-     
-  }
-
-   
-  header, nav, .navigation, .nav-container, .navbar {
-    background: transparent !important;
-    background-color: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-  }
-  header div, nav div, .nav-container div {
-    background: transparent !important;
-    box-shadow: none !important;
-  }
-  .sticky, .fixed, .is-sticky {
-    background: transparent !important;
-    box-shadow: none !important;
-  }
-  body.dark-mode header a, body.dark-mode nav a {
-    color: #e0e0e0 !important;
-  }
-
-   
-   
-   
-  
-  .mobile-menu-btn { display: none; }
-  .mobile-menu-overlay { display: none; }
-
-  @media screen and (max-width: 768px) {
-    
-     
-    body { padding-top: 60px; }
-
-     
-    header ul, nav ul, .menu, .nav-links, .navigation ul {
-        display: none !important;
+      </main>
+    </div>
+    <script>
+  (function () {
+    var btn = document.getElementById('theme-toggle');
+    if (!btn) return;
+    var root = document.documentElement;
+    var label = btn.querySelector('.theme-toggle-label');
+    function sync() {
+      var dark = root.classList.contains('dark-mode');
+      btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
+      if (label) label.textContent = dark ? 'Light mode' : 'Dark mode';
     }
-
-     
-    .mobile-menu-btn {
-        display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px;
-        width: 40px; height: 40px; border: 1px solid var(--text-color); border-radius: 6px; cursor: pointer;
-        position: absolute; right: 20px; top: 20px; z-index: 20002; background: transparent;
-    }
-
-    .mobile-menu-btn span {
-        display: block; width: 20px; height: 2px; background-color: var(--text-color); border-radius: 2px; transition: all 0.3s ease;
-    }
-
-    .mobile-menu-btn.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-    .mobile-menu-btn.active span:nth-child(2) { opacity: 0; }
-    .mobile-menu-btn.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-     
-    .mobile-menu-overlay {
-        display: block; position: fixed; top: 0; left: 0; width: 100%; height: 0; background: var(--menu-bg);
-        overflow: hidden; transition: height 0.4s cubic-bezier(0.16, 1, 0.3, 1); z-index: 20001; padding-top: 80px;
-        text-align: center; backdrop-filter: blur(10px);
-         
-        font-family: inherit !important; 
-    }
-
-    .mobile-menu-overlay.open { height: 100vh; }
-
-    .mobile-menu-overlay a {
-        display: block; 
-        padding: 15px; 
-        color: var(--text-color); 
-        text-decoration: none;
-        border-bottom: 1px solid rgba(128,128,128,0.1); 
-        opacity: 0; 
-        transform: translateY(20px); 
-        transition: 0.3s ease;
-
-         
-        font-family: inherit !important;
-        font-weight: inherit !important; 
-        font-size: 1.2rem;  
-        letter-spacing: inherit !important;
-        text-transform: inherit !important;
-    }
-
-    .mobile-menu-overlay.open a { opacity: 1; transform: translateY(0); }
-  }
-
-   
-  .mobile-header-name { display: none; }
-  @media screen and (max-width: 768px) {
-      .mobile-header-name {
-          display: block; text-align: center; margin-top: 10px; margin-bottom: 20px;
-      }
-      .mobile-header-name h1 {
-           
-          font-family: inherit !important;
-          font-size: 2rem; margin: 0; font-weight: 700; color: var(--text-color);
-      }
-  }
-
-   
-  a { position: relative; text-decoration: none !important; color: var(--link-color); transition: color 0.3s ease; }
-  a::after {
-    content: ''; position: absolute; width: 100%; transform: scaleX(0); height: 1px; bottom: -1px; left: 0;
-    background-color: var(--link-color); transform-origin: bottom right; transition: transform 0.3s ease-out;
-  }
-  a:hover::after { transform: scaleX(1); transform-origin: bottom left; }
-
-  img { animation: fade-up 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
-  @keyframes fade-up { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-
-   
-  hr { display: none !important; border: none !important; }
-  body.dark-mode a, body.dark-mode h2 a { color: #64b5f6 !important; }
-  body.dark-mode a::after { background-color: #64b5f6; }
-  
-  body.dark-mode .project-card {
-    background: #1e1e1e !important; border: 1px solid #333 !important; box-shadow: 0 4px 15px rgba(0,0,0,0.5) !important;
-  }
-  body.dark-mode .project-title { color: #fff !important; }
-  body.dark-mode .project-inst { color: #aaa !important; border-bottom: 1px solid #444 !important; }
-  body.dark-mode .project-desc { color: #ccc !important; }
-  
-  .news-section, body.dark-mode .news-section {
-    background: transparent !important; border: none !important; border-left: 4px solid #a2a2ff !important; padding-left: 15px;
-  }
-  body.dark-mode .news-section * { color: #e0e0e0 !important; }
-  body.dark-mode footer, body.dark-mode .attribution { color: #777 !important; }
-
-   
-   
-  .post-content, .article-content, article, .post-entry, .page-content, .entry-content, .post-title, .entry-header {
-      font-family: inherit !important; 
-  }
-
-   
-  main, .main, #main, .page-content { background: transparent !important; background-color: transparent !important; }
-  article, .first-entry, .post-entry, .home-info, .profile { background: transparent !important; background-color: transparent !important; box-shadow: none !important; border: none !important; }
-  .profile div, .home-info div { background: transparent !important; box-shadow: none !important; }
-
-   
-  @keyframes fadeInUpCard { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-
-  body.pub-mode main .row, body.pub-mode main > div > div {
-    background: var(--glass-bg) !important; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid var(--glass-border) !important; box-shadow: 0 4px 20px var(--glass-shadow) !important; border-radius: 12px; padding: 25px; margin-bottom: 30px !important; transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-wrap: wrap; align-items: center; opacity: 0; animation: fadeInUpCard 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
-  }
-  body.pub-mode main .row:hover, body.pub-mode main > div > div:hover {
-    transform: translateY(-5px); box-shadow: 0 12px 30px rgba(0,0,0,0.15) !important; border-left: 4px solid var(--link-color) !important;
-  }
-  body.pub-mode img { border-radius: 6px; transition: transform 0.4s ease; }
-  body.pub-mode .row:hover img, body.pub-mode main > div > div:hover img { transform: scale(1.02); }
-  body.pub-mode .row a[href]:not(:first-child), body.pub-mode main > div > div a[href]:not(:first-child) {
-    display: inline-block; margin-right: 10px; margin-top: 10px; padding: 6px 16px; border-radius: 50px; background-color: rgba(0, 119, 181, 0.08); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; text-decoration: none !important; border: 1px solid transparent;
-  }
-  body.pub-mode .row a[href]:not(:first-child):hover, body.pub-mode main > div > div a[href]:not(:first-child):hover {
-    background-color: var(--link-color); color: #fff !important;
-  }
-
-  .experience-pop-item { transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) !important; border-left: 4px solid transparent !important; padding-left: 10px !important; margin-left: -14px !important; border-radius: 0 12px 12px 0 !important; background: transparent !important; }
-  .experience-pop-item:hover { border-left-color: var(--link-color) !important; transform: translateX(10px) !important; background: linear-gradient(to right, rgba(0, 119, 181, 0.05), transparent) !important; }
-  .experience-pop-item img { transition: transform 0.3s ease !important; border-radius: 12px !important; background: transparent !important; box-shadow: none !important; }
-  .experience-pop-item:hover img { transform: scale(1.1); }
-
-  header a::before, nav a::before, .navigation a::before { content: none !important; display: none !important; }
-
-  .theme-toggle-btn {
-    position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px; border-radius: 50%; background-color: #333; color: #fff; border: none; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.25); display: flex; align-items: center; justify-content: center; font-size: 22px; z-index: 9999; transition: transform 0.2s;
-  }
-  .theme-toggle-btn:hover { transform: scale(1.15); }
-  body:not(.dark-mode) .theme-toggle-btn { background-color: #f0f0f0; color: #333; }
-</style>
-
-<button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
-  <i class="fa-solid fa-moon"></i>
-</button>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    
-    
-    
-    const path = window.location.pathname;
-    const nameContainer = document.querySelector('.mobile-header-name');
-    
-    
-    const isHomePage = path === '/' || path === '/index.html' || (path.split('/').filter(Boolean).length === 0);
-    
-    if (!isHomePage && nameContainer) {
-        
-        nameContainer.style.display = 'none';
-    }
-
-    
-    const header = document.querySelector('header') || document.querySelector('nav');
-    const originalLinks = document.querySelectorAll('header a, nav a');
-    const overlay = document.getElementById('mobile-menu-overlay');
-    
-    if (header) {
-        const btn = document.createElement('div');
-        btn.className = 'mobile-menu-btn';
-        btn.innerHTML = '<span></span><span></span><span></span>';
-        btn.addEventListener('click', function() {
-            this.classList.toggle('active');
-            overlay.classList.toggle('open');
-            const mobileLinks = overlay.querySelectorAll('a');
-            mobileLinks.forEach((link, idx) => {
-                if (overlay.classList.contains('open')) {
-                    link.style.transitionDelay = (idx * 0.1) + 's';
-                } else {
-                    link.style.transitionDelay = '0s';
-                }
-            });
-        });
-        header.appendChild(btn);
-    }
-    
-    
-    if (originalLinks.length > 0 && overlay) {
-        originalLinks.forEach(link => {
-            const text = link.innerText.trim();
-            
-            if (text.length > 0 && text.toLowerCase() !== 'saurav dutta') {
-                const newLink = link.cloneNode(true);
-                newLink.removeAttribute('class');
-                newLink.removeAttribute('id');
-                newLink.addEventListener('click', () => {
-                    document.querySelector('.mobile-menu-btn').click();
-                });
-                overlay.appendChild(newLink);
-            }
-        });
-    }
-
-    
-    const toggleBtn = document.getElementById('theme-toggle');
-    const htmlEl = document.documentElement;
-    const icon = toggleBtn.querySelector('i');
-    const href = window.location.href.toLowerCase();
-
-    if (href.indexOf("experience") > -1) {
-        document.body.classList.add("exp-mode");
-        const expImages = document.querySelectorAll('main img');
-        expImages.forEach(img => {
-            const container = img.parentElement;
-            if (container.tagName !== 'MAIN') {
-                container.classList.add('experience-pop-item');
-                container.style.opacity = '0';
-                container.style.animation = 'fadeInUpCard 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards';
-            }
-        });
-    }
-    else if (href.indexOf("publications") > -1) {
-        document.body.classList.add("pub-mode");
-        setTimeout(function() {
-            const rows = document.querySelectorAll('main .row, main > div > div');
-            rows.forEach((row, index) => {
-                row.style.animationDelay = (index * 0.15) + "s";
-            });
-        }, 100);
-    }
-
-    if (htmlEl.classList.contains('dark-mode')) {
-      document.body.classList.add('dark-mode'); 
-      icon.classList.replace('fa-moon', 'fa-sun');
-    }
-
-    toggleBtn.addEventListener('click', () => {
-      if (htmlEl.classList.contains('dark-mode')) {
-        htmlEl.classList.remove('dark-mode');
-        document.body.classList.remove('dark-mode');
-        icon.classList.replace('fa-sun', 'fa-moon');
-        localStorage.setItem('theme', 'light');
-      } else {
-        htmlEl.classList.add('dark-mode');
-        document.body.classList.add('dark-mode');
-        icon.classList.replace('fa-moon', 'fa-sun');
-        localStorage.setItem('theme', 'dark');
-      }
+    sync();
+    btn.addEventListener('click', function () {
+      var dark = root.classList.toggle('dark-mode');
+      try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) {}
+      sync();
     });
-  });
+  })();
 </script>
-    <svg width="0" height="0" class="hidden">
-  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 699.428 699.428" id="copy">
-    <path d="M502.714 0H240.428C194.178 0 153 42.425 153 87.429l-25.267.59c-46.228 0-84.019 41.834-84.019 86.838V612c0 45.004 41.179 87.428 87.429 87.428H459c46.249 0 87.428-42.424 87.428-87.428h21.857c46.25 0 87.429-42.424 87.429-87.428v-349.19L502.714 0zM459 655.715H131.143c-22.95 0-43.714-21.441-43.714-43.715V174.857c0-22.272 18.688-42.993 41.638-42.993l23.933-.721v393.429C153 569.576 194.178 612 240.428 612h262.286c0 22.273-20.765 43.715-43.714 43.715zm153-131.143c0 22.271-20.765 43.713-43.715 43.713H240.428c-22.95 0-43.714-21.441-43.714-43.713V87.429c0-22.272 20.764-43.714 43.714-43.714H459c-.351 50.337 0 87.975 0 87.975 0 45.419 40.872 86.882 87.428 86.882H612v306zm-65.572-349.715c-23.277 0-43.714-42.293-43.714-64.981V44.348L612 174.857h-65.572zm-43.714 131.537H306c-12.065 0-21.857 9.77-21.857 21.835 0 12.065 9.792 21.835 21.857 21.835h196.714c12.065 0 21.857-9.771 21.857-21.835 0-12.065-9.792-21.835-21.857-21.835zm0 109.176H306c-12.065 0-21.857 9.77-21.857 21.834 0 12.066 9.792 21.836 21.857 21.836h196.714c12.065 0 21.857-9.77 21.857-21.836 0-12.064-9.792-21.834-21.857-21.834z"></path>
-  </symbol>
-  <symbol viewBox="0 0 53 42" xmlns="http://www.w3.org/2000/svg" id="double-arrow">
-    <path d="M.595 39.653a1.318 1.318 0 0 1 0-1.864L16.55 21.833a1.318 1.318 0 0 0 0-1.863L.595 4.014a1.318 1.318 0 0 1 0-1.863L2.125.62a1.318 1.318 0 0 1 1.864 0l19.35 19.349a1.318 1.318 0 0 1 0 1.863l-19.35 19.35a1.318 1.318 0 0 1-1.863 0zm29 0a1.318 1.318 0 0 1 0-1.864L45.55 21.833a1.318 1.318 0 0 0 0-1.863L29.595 4.014a1.318 1.318 0 0 1 0-1.863l1.53-1.53a1.318 1.318 0 0 1 1.864 0l19.35 19.349a1.318 1.318 0 0 1 0 1.863l-19.35 19.35a1.318 1.318 0 0 1-1.863 0z"></path>
-  </symbol>
-</svg>
+
   </body>
 </html>
