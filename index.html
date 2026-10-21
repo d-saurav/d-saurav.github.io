@@ -25,7 +25,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
   
-<link rel="stylesheet" href="https://d-saurav.github.io/css/site.min.f2c95f86aaa34f38f5f70756e52cd312dc9cd459c1f1b0c75cb5232bad710e2f020d84122a80c9423c3ef3b2248200e6d8ad7a2b57029dfa31ce953f5cf849c0.css" integrity="sha512-8slfhqqjTzj19wdW5SzTEtyc1FnB8bDHXLUjK61xDi8CDYQSKoDJQjw&#43;87IkggDm2K16K1cCnfoxzpU/XPhJwA==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://d-saurav.github.io/css/site.min.c546f9832a9f8a5b323e27fb1e21ce4f8bfef50ca81f4262db9a8eabe17dbfcd2ea1190f3e224e85aee97d7db5af8a5916d2cee1b54ca3851d7ca2f8f51bf3e9.css" integrity="sha512-xUb5gyqfilsyPif7HiHOT4v&#43;9QyoH0Ji25qOq&#43;F9v80uoRkPPiJOha7pfX21r4pZFtLO4bVMo4UdfKL49Rvz6Q==" crossorigin="anonymous">
 
   <link rel="icon" href="https://d-saurav.github.io/icon.png" type="image/png">
 
@@ -174,7 +174,7 @@
   <script>
   (function (fig) {
     if (!fig || fig.dataset.ready) return; fig.dataset.ready = '1';
-    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var reduce = false;    
     var seq = [].slice.call(fig.querySelectorAll('.jr-track > li'));    
     var track = fig.querySelector('.jr-track');
     var HOLD = 2600;                  
@@ -268,7 +268,7 @@ News (hidden). To bring a news list back, add it below as Markdown, e.g.
     holes.setAttribute('filter', 'url(#' + uid + '-soft)');
     wash.setAttribute('mask', 'url(#' + uid + '-mask)');
 
-    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var reduce = false;    
     var T = compact ? { hold: 450, travel: 380, move: 280, whole: 1800 }
                     : { hold: 750, travel: 480, move: 340, whole: 2500 };
     var PX = compact ? { ring: 2, trail: 3, dot: 2.5 } : { ring: 3, trail: 5, dot: 5 };
@@ -439,7 +439,7 @@ News (hidden). To bring a news list back, add it below as Markdown, e.g.
   (function (fig) {
     if (!fig || fig.dataset.ready) return;
     fig.dataset.ready = "1";
-    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var reduce = false;    
     if (reduce) return;                                
     var NS = 'http://www.w3.org/2000/svg', XL = 'http://www.w3.org/1999/xlink';
     var uid = 'lat' + (window.__flowN = (window.__flowN || 0) + 1);
@@ -559,7 +559,7 @@ News (hidden). To bring a news list back, add it below as Markdown, e.g.
     var C = JSON.parse(fig.getAttribute('data-ssi'));
     var compact = fig.classList.contains('flow--compact');
     var parts = fig.querySelector('.ssi-parts');
-    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var reduce = false;    
 
     function sprite(name) {
       var b = C.sprites[name], im = document.createElementNS(NS, 'image');
@@ -712,7 +712,7 @@ News (hidden). To bring a news list back, add it below as Markdown, e.g.
       h.setAttribute('y1', b[0]); h.setAttribute('y2', b[1]); h.setAttribute('class', 'sweep-head');
       headG.appendChild(h); heads.push(h);
     });
-    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var reduce = false;    
     var SWEEP = 4200, HOLD = 1400, inView = false, t0 = null, raf = null;
 
     function sizeStrokes() {
